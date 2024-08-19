@@ -1,0 +1,1640 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- 공통적용헤더정보 -->
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <!-- //공통적용헤더정보 -->
+        <link rel="stylesheet" href="https://www.sait.samsung.co.kr/saithome/stylesheets/css/common.css" />
+        <script type="text/javascript" src="https://www.sait.samsung.co.kr/saithome/javascripts/jquery-1.8.2.min.js"></script>
+        <!--[if lt IE 9]><script src="https://www.sait.samsung.co.kr/saithome/javascripts/lib/html5shiv.min.js"></script><![endif]-->
+        <!--[if lt IE 10]><script src="https://www.sait.samsung.co.kr/saithome/javascripts/lib/placeholders.min.js"></script><![endif]-->
+        <meta name="Keywords" content="SAIT, Samsung Advanced Institute of Technology, 삼성종합기술원, 삼성전자 종합기술원, Samsung research, Samsung R&amp;D, Samsung future technology, R&amp;D, Autonomoucs Driving, Graphene, New materials, QD, Quantum Dot" />
+        <title>Research Paper | Samsung Advanced Institute of Technology</title>
+        <meta name="Description" content="Research Paper | Samsung Advanced Institute of Technology" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Research Paper | Samsung Advanced Institute of Technology" />
+        <meta property="og:description" content="Research Paper | Samsung Advanced Institute of Technology" />
+        <meta property="og:image" content="" />
+        <meta property="og:url" content="" />
+        <meta property="og:site_name" content="Samsung Advanced Institute of Technology" />
+        <meta name="Author" content="Samsung Advanced Institute of Technology" />
+        <meta name="robots" content="ALL" />
+        <link rel="stylesheet" href="../../resources/assets/library/swiper/swiper-bundle.min.css" />
+<link rel="stylesheet" href="../../resources/assets/css/common.css" />
+<link rel="stylesheet" href="../../resources/assets/css/sub.css" />
+<script type="text/javascript" src="../../resources/assets/library/jquery/jquery.easing.min.js"></script>
+<script type="text/javascript" src="../../resources/assets/library/swiper/swiper-bundle.min.js"></script>
+<script type="text/javascript" src="../../resources/assets/script/common.js"></script>
+<script type="text/javascript" src="../../resources/assets/script/sub.js"></script>
+
+    </head>
+    <body>
+        <div id="wrap" role="main">
+            <!-- header-->
+            <header class="header">
+    <div class="header__inner">
+        <h1 class="header__logo">
+            <a href="../index.html">
+                <span></span>
+                <!-- <img src="../../resources/assets/images/common/logo.svg" alt="SAIT" /> -->
+            </a>
+        </h1>
+        <nav class="gnb" id="gnb">
+            <ul>
+                <li>
+                    <a href="../about/who.html">About SAIT</a>
+                    <div class="dep2">
+                        <div class="dep2__item">
+                            <ul>
+                                <li><a href="../about/who.html">Who We Are</a></li>
+                                <li><a href="../about/history.html">History of Progress</a></li>
+                                <li><a href="../about/labs.html">Global Labs</a></li>
+                                <li><a href="../about/collabo_overview.html">Global Collaboration</a></li>
+                                <li><a href="../about/contact.html">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="../research/what.html">Research Areas</a>
+                    <div class="dep2">
+                        <div class="dep2__item">
+                            <div class="dep2__title"><a href="../research/what.html">What We Do</a></div>
+                            <ul>
+                                <li><a href="../research/aiAlgorithms.html">AI Algorithms</a></li>
+                                <li><a href="../research/computingPlatform.html">Computing Platform</a></li>
+                                <li>
+                                    <a href="../research/metaphotonics.html"
+                                        >Si-Photonics /<br />
+                                        Meta-Photonics</a
+                                    >
+                                </li>
+                                <li><a href="../research/displayMaterials.html">Display Materials</a></li>
+                                <li><a href="../research/batteryMaterials.html">Battery Materials</a></li>
+                                <li><a href="../research/semiconductorMaterials.html">Semiconductor Materials &amp; Devices</a></li>
+                                <li><a href="../research/environmentalResearch.html">Environmental &amp; Energy </a></li>
+                            </ul>
+                        </div>
+                        <div class="dep2__item">
+                            <div class="dep2__title"><a href="../research/paper_list_srt.html">Publications</a></div>
+                            <ul>
+                                <li><a href="../research/paper_list_wtc.html">Best Research Papers</a></li>
+                            </ul>
+                        </div>
+                        <div class="dep2__item">
+                            <div class="dep2__title"><a href="../research/infra.html">Research Infra</a></div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="../about/press.html">News & Events</a>
+                    <div class="dep2">
+                        <div class="dep2__item">
+                            <ul>
+                                <li><a href="../about/press.html">Press</a></li>
+                                <li><a href="../event/saif2023.html">AI Forum</a></li>
+                                <li><a href="../event/aiResearcher.html">AI Researcher of the Year</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="../join/application.html">Careers</a>
+                    <div class="dep2">
+                        <div class="dep2__item">
+                            <ul>
+                                <li><a href="../join/application.html">Recruiting process</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div class="util">
+            <div class="util__search">
+                <button type="button" id="searchBtn">검색</button>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- //include header -->
+<div id="headerSearch">
+    <!-- <form action="../etc/search.do" method="get" name="allSearchFrm"> -->
+    <fieldset>
+        <legend>headerSearch form</legend>
+        <div id="globalInput">
+            <label for="globalSearch" class="hidden-txt">search string</label>
+            <input type="text" id="searchKeyword2" name="searchKeyword" placeholder="Input text" />
+            <div class="submit_wrap" onclick="AllSearch();" onkeypress="AllSearch()" tabindex="0" title="search button">
+                <!-- <input type="submit" value="search"> -->
+                <!--<a href="javascript:void(0);" type="submit" value="search"></a>-->
+            </div>
+        </div>
+    </fieldset>
+    <!-- </form> -->
+</div>
+
+<script>
+    $('#searchKeyword2').keydown(function (key) {
+        if (key.keyCode == 13) {
+            //키가 13이면 실행 (엔터는 13)
+            AllSearch();
+        }
+    });
+    function AllSearch() {
+        if ($('#searchKeyword2').val() == '') {
+            alert('Please enter your search word');
+            $('#searchKeyword2').focus();
+            return false;
+        }
+        window.location.href = '../etc/search.do?searchKeyword=' + encodeURIComponent($('#searchKeyword2').val());
+        /* window.allSearchFrm.submit(); */
+    }
+</script>
+
+            <!-- //header-->
+
+            <!-- container-->
+            <section id="container" class="research_pp">
+                <!-- subLocation -->
+<div id="subLocation">
+    <div class="location_box">
+        <ul class="location_list">
+            <li class="home"><a href="../index.html">main page</a></li>
+            <li class="depth1">
+                <button type="button">Research Areas</button>
+                <ul class="under_depth">
+                    <li>
+                        <a href="../about/who.html"
+                            >
+                            About SAIT
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../research/what.html"
+                             class="active" >
+                            Research Areas
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../about/press.html"
+                            >
+                            News & Events
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../join/application.html"
+                            >
+                            Join Us
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="depth2">
+                <button type="button">Best Research Papers</button>
+                
+                
+                    <ul class="under_depth">
+                        <li class="accent">
+                            <a href="../research/what.html"
+                                >
+                                What We Do
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../research/aiAlgorithms.html"
+                                >
+                                AI Algorithms
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../research/metaphotonics.html"
+                                >
+                                Si-Photonics / Meta-Photonics
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../research/displayMaterials.html"
+                                >
+                                Display Materials
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../research/batteryMaterials.html"
+                                >
+                                Battery Materials
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../research/semiconductorMaterials.html"
+                                >
+                                Semiconductor Materials & Devices
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../research/environmentalResearch.html"
+                                >
+                                Environmental & Energy
+                            </a>
+                        </li>
+                        <li class="accent">
+                            <a href="../research/paper_list_srt.html"
+                                >
+                                Publications
+                            </a>
+                        </li>
+                        <li class="accent">
+                            <a href="../research/paper_list_wtc.html"
+                                 class="active" >
+                                Best Research Papers
+                            </a>
+                        </li>
+                        <li class="accent">
+                            <a href="../research/infra.html"
+                                >
+                                Research Infra
+                            </a>
+                        </li>
+                    </ul>
+                
+                
+                
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- //subLocation -->
+
+                <!-- subContent-->
+                <section id="content" class="paper_list">
+                    <div class="content__container">
+                        <div id="subTitle" class="js-scr-sec">
+                            <h4 class="">Best Research Papers</h4>
+                        </div>
+                        <article class="row">
+                            <div class="row__inner">
+                                <div class="filter">
+                                    <div class="filter__head">
+                                        <button type="button" class="filter__tab">
+                                            <span class="filter__icon">Filters</span>
+                                        </button>
+                                    </div>
+                                    <div class="filter__body">
+                                        <div class="filter__container">
+                                            <div class="filter__row" data-title="category">
+                                                <div class="filter__subject">
+                                                    <strong>Category</strong>
+                                                </div>
+                                                <div class="filter__list">
+                                                    <ul>
+                                                        <li>
+                                                            <input type="checkbox" id="category1" />
+                                                            <label for="category1">AI Algorithms</label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="checkbox" id="category2" />
+                                                            <label for="category2">Computing Platform</label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="checkbox" id="category3" />
+                                                            <label for="category3">Environmental Research</label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="checkbox" id="category4" />
+                                                            <label for="category4">OLED Materials</label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="checkbox" id="category5" />
+                                                            <label for="category5">Human Augmentation</label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="checkbox" id="category6" />
+                                                            <label for="category6">Metaphotonics</label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="checkbox" id="category7" />
+                                                            <label for="category7">Nano Electronics</label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="checkbox" id="category8" />
+                                                            <label for="category8">Nano Fabrication</label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="checkbox" id="category9" />
+                                                            <label for="category9">Next Generation Semiconductor Materials</label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="checkbox" id="category10" />
+                                                            <label for="category10">Graphene/2-Dimensional Materials</label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="checkbox" id="category11" />
+                                                            <label for="category11">Quantum Dot</label>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="filter__row" data-title="journal">
+                                                <div class="filter__subject">
+                                                    <strong>Journal</strong>
+                                                </div>
+                                                <div class="filter__list">
+                                                    <ul>
+                                                        <li>
+                                                            <input type="checkbox" id="journal1" />
+                                                            <label for="journal1">ACS Catalysis</label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="checkbox" id="journal2" />
+                                                            <label for="journal2">ACS Energy Letters</label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="checkbox" id="journal3" />
+                                                            <label for="journal3">ACS Nano</label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="checkbox" id="journal4" />
+                                                            <label for="journal4">Nature Electronics</label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="checkbox" id="journal5" />
+                                                            <label for="journal5">Advanced Science</label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="checkbox" id="journal6" />
+                                                            <label for="journal6">Materials Today</label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="checkbox" id="journal7" />
+                                                            <label for="journal7">Nature Communications</label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="checkbox" id="journal8" />
+                                                            <label for="journal8">Advanced Functional Materials</label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="checkbox" id="journal9" />
+                                                            <label for="journal9">Nature Geoscience</label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="checkbox" id="journal10" />
+                                                            <label for="journal10">Science Advances</label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="checkbox" id="journal11" />
+                                                            <label for="journal11">Small</label>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="filter__row" date-title="date">
+                                                <div class="filter__subject">
+                                                    <strong
+                                                        >Date<br />
+                                                        (Year)</strong
+                                                    >
+                                                </div>
+                                                <div class="filter__list filter__list--free">
+                                                    <ul>
+                                                        <li>
+                                                            <input type="checkbox" id="date2011" />
+                                                            <label for="date2011">2011</label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="checkbox" id="date2012" />
+                                                            <label for="date2012">2012</label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="checkbox" id="date2013" />
+                                                            <label for="date2013">2013</label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="checkbox" id="date2014" />
+                                                            <label for="date2014">2014</label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="checkbox" id="date2015" />
+                                                            <label for="date2015">2015</label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="checkbox" id="date2016" />
+                                                            <label for="date2016">2016</label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="checkbox" id="date2017" />
+                                                            <label for="date2017">2017</label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="checkbox" id="date2018" />
+                                                            <label for="date2018">2018</label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="checkbox" id="date2019" />
+                                                            <label for="date2019">2019</label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="checkbox" id="date2020" />
+                                                            <label for="date2020">2020</label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="checkbox" id="date2021" />
+                                                            <label for="date2021">2021</label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="checkbox" id="date2022" />
+                                                            <label for="date2022">2022</label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="checkbox" id="date2023" />
+                                                            <label for="date2023">2023</label>
+                                                        </li>
+                                                        <li>
+                                                            <input type="checkbox" id="date2024" />
+                                                            <label for="date2024">2024</label>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="btn-wrap">
+                                            <button type="button" class="btn btn-default reset-button">
+                                                <span class="btn btn-default__text">Reset</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="list_wrap">
+                                    <div class="item_list js-scr-sec">
+                                        <form action="?" method="get" name="Search" id="frmSearch">
+                                            <input type="hidden" id="pageIndex" name="pageIndex" value="1" />
+                                        </form>
+                                        <!-- 2021-07-27 수정 시작 -->
+                                        <!-- article style 최상단에만 고정 -->
+                                        <article class="target-item" onclick="javascript:location.href='../research/paper_view.html'" data-category="Battery Materials" data-journal="ACS Energy Letters" data-date="2021">
+                                            <i>
+                                                <img src="https://www.sait.samsung.co.kr/saithome/images/research/ico07_p.png" />
+                                            </i>
+                                            <h1>Multi-functional interface for high-rate and long-durable garnet-type solid electrolyte in lithium metal batteries</h1>
+                                            <div class="infowrap brp">
+                                                <p class="infobox">
+                                                    <span>Category</span>
+                                                    <span>Battery Materials</span>
+                                                </p>
+                                                <p class="infobox">
+                                                    <span>Journal</span>
+                                                    <span>ACS Energy Letters</span>
+                                                </p>
+                                                <p class="infobox">
+                                                    <span>Date</span>
+                                                    <span>2021.12.23</span>
+                                                </p>
+                                            </div>
+                                        </article>
+                                        <article class="target-item" onclick="javascript:location.href='../research/paper_view.html'" data-category="Quantum Dot" data-journal="Small" data-date="2021">
+                                            <i>
+                                                <img src="https://www.sait.samsung.co.kr/saithome/images/research/ico06_p.png" />
+                                            </i>
+                                            <h1>Tuning Hot Carrier Dynamics of InP/ZnSe/ZnS Quantum Dots by Shell Morphology Control</h1>
+                                            <div class="infowrap brp">
+                                                <p class="infobox">
+                                                    <span>Category</span>
+                                                    <span>Quantum Dot</span>
+                                                </p>
+                                                <p class="infobox">
+                                                    <span>Journal</span>
+                                                    <span>Small</span>
+                                                </p>
+                                                <p class="infobox">
+                                                    <span>Date</span>
+                                                    <span>2021.12.09</span>
+                                                </p>
+                                            </div>
+                                        </article>
+                                        <article class="target-item" onclick="javascript:location.href='../research/paper_view.html'" data-category="Nano Electronics" data-journal="ACS Catalysis" data-date="2021">
+                                            <i>
+                                                <img src="https://www.sait.samsung.co.kr/saithome/images/research/ico05_p.png" />
+                                            </i>
+                                            <h1>Optimal Length of Hybrid Metal-Semiconductor Nanorods for Photocatalytic Hydrogen Generation</h1>
+                                            <div class="infowrap brp">
+                                                <p class="infobox">
+                                                    <span>Category</span>
+                                                    <span>Nano Electronics</span>
+                                                </p>
+                                                <p class="infobox">
+                                                    <span>Journal</span>
+                                                    <span>ACS Catalysis</span>
+                                                </p>
+                                                <p class="infobox">
+                                                    <span>Date</span>
+                                                    <span>2021.10.18</span>
+                                                </p>
+                                            </div>
+                                        </article>
+                                        <article class="target-item" onclick="javascript:location.href='../research/paper_view.html'" data-category="Computing Platform" data-journal="Nature Electronics" data-date="2021">
+                                            <i>
+                                                <img src="https://www.sait.samsung.co.kr/saithome/images/research/ico02_p.png" />
+                                            </i>
+                                            <h1>Neuromorphic electronics based on copying and pasting the brain</h1>
+                                            <div class="infowrap brp">
+                                                <p class="infobox">
+                                                    <span>Category</span>
+                                                    <span>Computing Platform</span>
+                                                </p>
+                                                <p class="infobox">
+                                                    <span>Journal</span>
+                                                    <span>Nature Electronics</span>
+                                                </p>
+                                                <p class="infobox">
+                                                    <span>Date</span>
+                                                    <span>2021.09.23</span>
+                                                </p>
+                                            </div>
+                                        </article>
+                                        <article class="target-item" onclick="javascript:location.href='../research/paper_view.html'" data-category="Semiconductor Materials" data-journal="Materials Science and Engineering: R-Reports" data-date="2021">
+                                            <i>
+                                                <img src="https://www.sait.samsung.co.kr/saithome/images/research/ico08_p.png" />
+                                            </i>
+                                            <h1>Solution-Processable Infrared Photodetectors: Materials, Device Physics, and Applications</h1>
+                                            <div class="infowrap brp">
+                                                <p class="infobox">
+                                                    <span>Category</span>
+                                                    <span>Semiconductor Materials</span>
+                                                </p>
+                                                <p class="infobox">
+                                                    <span>Journal</span>
+                                                    <span>Materials Science and Engineering: R-Reports</span>
+                                                </p>
+                                                <p class="infobox">
+                                                    <span>Date</span>
+                                                    <span>2021.09.16</span>
+                                                </p>
+                                            </div>
+                                        </article>
+                                        <article class="target-item" onclick="javascript:location.href='../research/paper_view.html'" data-category="OLED Materials" data-journal="Advanced Science" data-date="2021">
+                                            <i>
+                                                <img src="https://www.sait.samsung.co.kr/saithome/images/research/ico06_p.png" />
+                                            </i>
+                                            <h1>Purely spin-vibronic coupling assisted triplet to singlet up-conversion for real deep blue organic light-emitting diodes with over 20% efficiency and y color coordinate of 0.05</h1>
+                                            <div class="infowrap brp">
+                                                <p class="infobox">
+                                                    <span>Category</span>
+                                                    <span>OLED Materials</span>
+                                                </p>
+                                                <p class="infobox">
+                                                    <span>Journal</span>
+                                                    <span>Advanced Science</span>
+                                                </p>
+                                                <p class="infobox">
+                                                    <span>Date</span>
+                                                    <span>2021.08.13</span>
+                                                </p>
+                                            </div>
+                                        </article>
+                                        <article class="target-item" onclick="javascript:location.href='../research/paper_view.html'" data-category="Nano Electronics Devices" data-journal="Materials Today" data-date="2021">
+                                            <i>
+                                                <img src="https://www.sait.samsung.co.kr/saithome/images/research/ico05_p.png" />
+                                            </i>
+                                            <h1>Unexpectedly low barrier of ferroelectric switching in HfO2 via topological domain walls</h1>
+                                            <div class="infowrap brp">
+                                                <p class="infobox">
+                                                    <span>Category</span>
+                                                    <span>Nano Electronics Devices</span>
+                                                </p>
+                                                <p class="infobox">
+                                                    <span>Journal</span>
+                                                    <span>Materials Today</span>
+                                                </p>
+                                                <p class="infobox">
+                                                    <span>Date</span>
+                                                    <span>2021.08.11</span>
+                                                </p>
+                                            </div>
+                                        </article>
+                                        <article class="target-item" onclick="javascript:location.href='../research/paper_view.html'" data-category="Graphene/2-Dimensional Materials" data-journal="Advanced Materials" data-date="2021">
+                                            <i>
+                                                <img src="https://www.sait.samsung.co.kr/saithome/images/research/ico08_p.png" />
+                                            </i>
+                                            <h1>Precise Layer Control and Electronic State Modulation of a Transition Metal Dichalcogenide via Phase-Transition-Induced Growth</h1>
+                                            <div class="infowrap brp">
+                                                <p class="infobox">
+                                                    <span>Category</span>
+                                                    <span>Graphene/2-Dimensional Materials </span>
+                                                </p>
+                                                <p class="infobox">
+                                                    <span>Journal</span>
+                                                    <span>Advanced Materials</span>
+                                                </p>
+                                                <p class="infobox">
+                                                    <span>Date</span>
+                                                    <span>2021.07.26</span>
+                                                </p>
+                                            </div>
+                                        </article>
+                                        <article class="target-item" onclick="javascript:location.href='../research/paper_view.html'" data-category="Nano Electronics Devices" data-journal="ACS Nano" data-date="2021">
+                                            <i>
+                                                <img src="https://www.sait.samsung.co.kr/saithome/images/research/ico05_p.png" />
+                                            </i>
+                                            <h1>Surface Activity-Tuned Metal Oxide Chemiresistor: Toward Direct and Quantitative Halitosis Diagnosis</h1>
+                                            <div class="infowrap brp">
+                                                <p class="infobox">
+                                                    <span>Category</span>
+                                                    <span>Nano Electronics Devices</span>
+                                                </p>
+                                                <p class="infobox">
+                                                    <span>Journal</span>
+                                                    <span>ACS Nano</span>
+                                                </p>
+                                                <p class="infobox">
+                                                    <span>Date</span>
+                                                    <span>2021.06.25</span>
+                                                </p>
+                                            </div>
+                                        </article>
+                                        <article class="target-item" onclick="javascript:location.href='../research/paper_view.html'" data-category="Battery Materials" data-journal="Nature Communications" data-date="2021">
+                                            <i>
+                                                <img src="https://www.sait.samsung.co.kr/saithome/images/research/ico07_p.png" />
+                                            </i>
+                                            <h1>Evolution and expansion of Li concentration gradient during charge-discharge cycling</h1>
+                                            <div class="infowrap brp">
+                                                <p class="infobox">
+                                                    <span>Category</span>
+                                                    <span>Battery Materials</span>
+                                                </p>
+                                                <p class="infobox">
+                                                    <span>Journal</span>
+                                                    <span>Nature Communications</span>
+                                                </p>
+                                                <p class="infobox">
+                                                    <span>Date</span>
+                                                    <span>2021.06.21</span>
+                                                </p>
+                                            </div>
+                                        </article>
+                                        <article class="target-item" onclick="javascript:location.href='../research/paper_view.html'" data-category="Next Generation Semiconductor Materials" data-journal="Science Advances" data-date="2021">
+                                            <i>
+                                                <img src="https://www.sait.samsung.co.kr/saithome/images/research/ico08_p.png" />
+                                            </i>
+                                            <h1>A Standalone Real-Time Health Monitoring Patch Based on a Stretchable Organic Optoelectronic System</h1>
+                                            <div class="infowrap brp">
+                                                <p class="infobox">
+                                                    <span>Category</span>
+                                                    <span>Next Generation Semiconductor Materials</span>
+                                                </p>
+                                                <p class="infobox">
+                                                    <span>Journal</span>
+                                                    <span>Science Advances</span>
+                                                </p>
+                                                <p class="infobox">
+                                                    <span>Date</span>
+                                                    <span>2021.06.04</span>
+                                                </p>
+                                            </div>
+                                        </article>
+                                        <article class="target-item" onclick="javascript:location.href='../research/paper_view.html'" data-category="Battery Materials" data-journal="Nature Communications" data-date="2021">
+                                            <i>
+                                                <img src="https://www.sait.samsung.co.kr/saithome/images/research/ico07_p.png" />
+                                            </i>
+                                            <h1>Interplay between electrochemical reactions and mechanical responses in silicon-graphite anodes and its impact on degradation</h1>
+                                            <div class="infowrap brp">
+                                                <p class="infobox">
+                                                    <span>Category</span>
+                                                    <span>Battery Materials</span>
+                                                </p>
+                                                <p class="infobox">
+                                                    <span>Journal</span>
+                                                    <span>Nature Communications</span>
+                                                </p>
+                                                <p class="infobox">
+                                                    <span>Date</span>
+                                                    <span>2021.05.11</span>
+                                                </p>
+                                            </div>
+                                        </article>
+                                        <article class="target-item" onclick="javascript:location.href='../research/paper_view.html'" data-category="Environmental Research" data-journal="Nature Geoscience" data-date="2021">
+                                            <i>
+                                                <img src="https://www.sait.samsung.co.kr/saithome/images/research/ico09_p.png" />
+                                            </i>
+                                            <h1>Controlling particulate nitrate pollution in China</h1>
+                                            <div class="infowrap brp">
+                                                <p class="infobox">
+                                                    <span>Category</span>
+                                                    <span>Environmental Research</span>
+                                                </p>
+                                                <p class="infobox">
+                                                    <span>Journal</span>
+                                                    <span>Nature Geoscience</span>
+                                                </p>
+                                                <p class="infobox">
+                                                    <span>Date</span>
+                                                    <span>2021.04.26</span>
+                                                </p>
+                                            </div>
+                                        </article>
+                                        <article class="target-item" onclick="javascript:location.href='../research/paper_view.html'" data-category="Metaphotonics" data-journal="Nano Letter" data-date="2021">
+                                            <i>
+                                                <img src="https://www.sait.samsung.co.kr/saithome/images/research/ico04_p.png" />
+                                            </i>
+                                            <h1>Electrically actuated varifocal lens based on liquid-crystal-embedded dielectric metasurfaces</h1>
+                                            <div class="infowrap brp">
+                                                <p class="infobox">
+                                                    <span>Category</span>
+                                                    <span>Metaphotonics</span>
+                                                </p>
+                                                <p class="infobox">
+                                                    <span>Journal</span>
+                                                    <span>Nano Letter</span>
+                                                </p>
+                                                <p class="infobox">
+                                                    <span>Date</span>
+                                                    <span>2021.04.26</span>
+                                                </p>
+                                            </div>
+                                        </article>
+                                        <article class="target-item" onclick="javascript:location.href='../research/paper_view.html'" data-category="Metaphotonics" data-journal="Nature Nanotechnology" data-date="2021">
+                                            <i>
+                                                <img src="https://www.sait.samsung.co.kr/saithome/images/research/ico04_p.png" />
+                                            </i>
+                                            <h1>Electrical tuning of phase change antennas and metasurfaces</h1>
+                                            <div class="infowrap brp">
+                                                <p class="infobox">
+                                                    <span>Category</span>
+                                                    <span>Metaphotonics</span>
+                                                </p>
+                                                <p class="infobox">
+                                                    <span>Journal</span>
+                                                    <span>Nature Nanotechnology</span>
+                                                </p>
+                                                <p class="infobox">
+                                                    <span>Date</span>
+                                                    <span>2021.04.19</span>
+                                                </p>
+                                            </div>
+                                        </article>
+                                        <article class="target-item" onclick="javascript:location.href='../research/paper_view.html'" data-category="Next Generation Semiconductor Materials" data-journal="Advanced Functional Materials" data-date="2021">
+                                            <i>
+                                                <img src="https://www.sait.samsung.co.kr/saithome/images/research/ico08_p.png" />
+                                            </i>
+                                            <h1>Organic Upconversion Imager with Dual Electronic and Optical Readouts for Shortwave Infrared Light Detection</h1>
+                                            <div class="infowrap brp">
+                                                <p class="infobox">
+                                                    <span>Category</span>
+                                                    <span>Next Generation Semiconductor Materials</span>
+                                                </p>
+                                                <p class="infobox">
+                                                    <span>Journal</span>
+                                                    <span>Advanced Functional Materials</span>
+                                                </p>
+                                                <p class="infobox">
+                                                    <span>Date</span>
+                                                    <span>2021.04.15</span>
+                                                </p>
+                                            </div>
+                                        </article>
+                                        <article class="target-item" onclick="javascript:location.href='../research/paper_view.html'" data-category="Display Materials" data-journal="ature Photonics" data-date="2021">
+                                            <i>
+                                                <img src="https://www.sait.samsung.co.kr/saithome/images/research/ico06_p.png" />
+                                            </i>
+                                            <h1>Electrically driven mid-submicron pixelation of InGaN micro-LED displays for AR glasses</h1>
+                                            <div class="infowrap brp">
+                                                <p class="infobox">
+                                                    <span>Category</span>
+                                                    <span>Display Materials</span>
+                                                </p>
+                                                <p class="infobox">
+                                                    <span>Journal</span>
+                                                    <span>Nature Photonics</span>
+                                                </p>
+                                                <p class="infobox">
+                                                    <span>Date</span>
+                                                    <span>2021.03.25</span>
+                                                </p>
+                                            </div>
+                                        </article>
+                                        <article class="target-item" onclick="javascript:location.href='../research/paper_view.html'" data-category="Semiconductor Materials" data-journal="Materials Today" data-date="2021">
+                                            <i>
+                                                <img src="https://www.sait.samsung.co.kr/saithome/images/research/ico08_p.png" />
+                                            </i>
+                                            <h1>3D-to-2D phase transformation through highly ordered 1D crystals from transition-metal oxides to dichalcogenides</h1>
+                                            <div class="infowrap brp">
+                                                <p class="infobox">
+                                                    <span>Category</span>
+                                                    <span>Semiconductor Materials</span>
+                                                </p>
+                                                <p class="infobox">
+                                                    <span>Journal</span>
+                                                    <span>Materials Today</span>
+                                                </p>
+                                                <p class="infobox">
+                                                    <span>Date</span>
+                                                    <span>2021.03.17</span>
+                                                </p>
+                                            </div>
+                                        </article>
+                                        <article class="target-item" onclick="javascript:location.href='../research/paper_view.html'" data-category="Semiconductor Materials" data-journal="Nature" data-date="2021">
+                                            <i>
+                                                <img src="https://www.sait.samsung.co.kr/saithome/images/research/ico08_p.png" />
+                                            </i>
+                                            <h1>Promises and pitfalls of 2D transistors</h1>
+                                            <div class="infowrap brp">
+                                                <p class="infobox">
+                                                    <span>Category</span>
+                                                    <span>Semiconductor Materials</span>
+                                                </p>
+                                                <p class="infobox">
+                                                    <span>Journal</span>
+                                                    <span>Nature</span>
+                                                </p>
+                                                <p class="infobox">
+                                                    <span>Date</span>
+                                                    <span>2021.03.03</span>
+                                                </p>
+                                            </div>
+                                        </article>
+                                        <article class="target-item" onclick="javascript:location.href='../research/paper_view.html'" data-category="Quantum Dot" data-journal="Nano Letter" data-date="2021">
+                                            <i>
+                                                <img src="https://www.sait.samsung.co.kr/saithome/images/research/ico06_p.png" />
+                                            </i>
+                                            <h1>Auger Recombination in Highly Luminescent InP/ZnSe/ZnS Quantum Dots</h1>
+                                            <div class="infowrap brp">
+                                                <p class="infobox">
+                                                    <span>Category</span>
+                                                    <span>Quantum Dot</span>
+                                                </p>
+                                                <p class="infobox">
+                                                    <span>Journal</span>
+                                                    <span>Nano Letter</span>
+                                                </p>
+                                                <p class="infobox">
+                                                    <span>Date</span>
+                                                    <span>2021.02.26</span>
+                                                </p>
+                                            </div>
+                                        </article>
+                                        <article class="target-item" onclick="javascript:location.href='../research/paper_view.html'" data-category="OLED Materials" data-journal="Nature Photonics" data-date="2021">
+                                            <i>
+                                                <img src="https://www.sait.samsung.co.kr/saithome/images/research/ico06_p.png" />
+                                            </i>
+                                            <h1>High efficiency and long lifetime deep blue organic light-emitting diodes</h1>
+                                            <div class="infowrap brp">
+                                                <p class="infobox">
+                                                    <span>Category</span>
+                                                    <span>OLED Materials</span>
+                                                </p>
+                                                <p class="infobox">
+                                                    <span>Journal</span>
+                                                    <span>Nature Photonics</span>
+                                                </p>
+                                                <p class="infobox">
+                                                    <span>Date</span>
+                                                    <span>2021.02.15</span>
+                                                </p>
+                                            </div>
+                                        </article>
+                                        <article class="target-item" onclick="javascript:location.href='../research/paper_view.html'" data-category="Next Generation Semiconductor Materials" data-journal="Nature Electronics" data-date="2021">
+                                            <i>
+                                                <img src="https://www.sait.samsung.co.kr/saithome/images/research/ico08_p.png" />
+                                            </i>
+                                            <h1>Strain-insensitive intrinsically stretchable transistors and circuits</h1>
+                                            <div class="infowrap brp">
+                                                <p class="infobox">
+                                                    <span>Category</span>
+                                                    <span>Next Generation Semiconductor Materials</span>
+                                                </p>
+                                                <p class="infobox">
+                                                    <span>Journal</span>
+                                                    <span>Nature Electronics</span>
+                                                </p>
+                                                <p class="infobox">
+                                                    <span>Date</span>
+                                                    <span>2021.01.25</span>
+                                                </p>
+                                            </div>
+                                        </article>
+                                        <article class="target-item" onclick="javascript:location.href='../research/paper_view.html'" data-category="Next Generation Semiconductor Materials" data-journal="ACS Nano" data-date="2020">
+                                            <i>
+                                                <img src="https://www.sait.samsung.co.kr/saithome/images/research/ico08_p.png" />
+                                            </i>
+                                            <h1>Strongly field-dependent dissociation of charge transfer states for high performance bulk heterojunction organic photodetectors</h1>
+                                            <div class="infowrap brp">
+                                                <p class="infobox">
+                                                    <span>Category</span>
+                                                    <span>Next Generation Semiconductor Materials</span>
+                                                </p>
+                                                <p class="infobox">
+                                                    <span>Journal</span>
+                                                    <span>ACS Nano</span>
+                                                </p>
+                                                <p class="infobox">
+                                                    <span>Date</span>
+                                                    <span>2020.12.17</span>
+                                                </p>
+                                            </div>
+                                        </article>
+                                        <article class="target-item" onclick="javascript:location.href='../research/paper_view.html'" data-category="Human Augmentation" data-journal="Nature Communication" data-date="2020">
+                                            <i>
+                                                <img src="https://www.sait.samsung.co.kr/saithome/images/research/ico03_p.png" />
+                                            </i>
+                                            <h1>Slim-panel holgraphic video display</h1>
+                                            <div class="infowrap brp">
+                                                <p class="infobox">
+                                                    <span>Category</span>
+                                                    <span>Human Augmentation</span>
+                                                </p>
+                                                <p class="infobox">
+                                                    <span>Journal</span>
+                                                    <span>Nature Communication</span>
+                                                </p>
+                                                <p class="infobox">
+                                                    <span>Date</span>
+                                                    <span>2020.11.10</span>
+                                                </p>
+                                            </div>
+                                        </article>
+                                        <article class="target-item" onclick="javascript:location.href='../research/paper_view.html'" data-category="Display Materials" data-journal="Advanced Materials" data-date="2020">
+                                            <i>
+                                                <img src="https://www.sait.samsung.co.kr/saithome/images/research/ico06_p.png" />
+                                            </i>
+                                            <h1>Isotope Effect in the Magneto-Optoelectronic Response of Organic Light-Emitting Diodes Based on Donor-Acceptor Exciplexes</h1>
+                                            <div class="infowrap brp">
+                                                <p class="infobox">
+                                                    <span>Category</span>
+                                                    <span>Display Materials</span>
+                                                </p>
+                                                <p class="infobox">
+                                                    <span>Journal</span>
+                                                    <span>Advanced Materials</span>
+                                                </p>
+                                                <p class="infobox">
+                                                    <span>Date</span>
+                                                    <span>2020.10.29</span>
+                                                </p>
+                                            </div>
+                                        </article>
+                                        <!-- 2021-07-27 수정 끝-->
+                                        <!--  2020-11-17 수정 시작 -->
+
+                                        <!--  2020-11-17 수정 끝 -->
+                                        <!-- 20201104 -->
+                                        <article class="target-item" onclick="javascript:location.href='../research/paper_view.html'" data-category="Metaphotonics" data-journal="Nature Nanotechnology" data-date="2020">
+                                            <i>
+                                                <img src="https://www.sait.samsung.co.kr/saithome/images/research/ico04_p.png" />
+                                            </i>
+                                            <h1>All-Solid-State Spatial Light Modulator with Independent Phase and Amplitude Control for 3D Light Detection and Ranging Applications</h1>
+                                            <div class="infowrap brp">
+                                                <p class="infobox">
+                                                    <span>Category</span>
+                                                    <span>Metaphotonics</span>
+                                                </p>
+                                                <p class="infobox">
+                                                    <span>Journal</span>
+                                                    <span>Nature Nanotechnology</span>
+                                                </p>
+                                                <p class="infobox">
+                                                    <span>Date</span>
+                                                    <span>2020.10.26</span>
+                                                </p>
+                                            </div>
+                                        </article>
+
+                                        <article class="target-item" onclick="javascript:location.href='../research/paper_view.html'" data-category="Display Materials" data-journal="Science" data-date="2020">
+                                            <i>
+                                                <img src="https://www.sait.samsung.co.kr/saithome/images/research/ico06_p.png" />
+                                            </i>
+                                            <h1>Metasurface-driven OLED beyond 10,000 PPI</h1>
+                                            <div class="infowrap brp">
+                                                <p class="infobox">
+                                                    <span>Category</span>
+                                                    <span>Display Materials</span>
+                                                </p>
+                                                <p class="infobox">
+                                                    <span>Journal</span>
+                                                    <span>Science</span>
+                                                </p>
+                                                <p class="infobox">
+                                                    <span>Date</span>
+                                                    <span>2020.10.23</span>
+                                                </p>
+                                            </div>
+                                        </article>
+
+                                        <article class="target-item" onclick="javascript:location.href='../research/paper_view.html'" data-category="Display Materials" data-journal="Nature" data-date="2020">
+                                            <i>
+                                                <img src="https://www.sait.samsung.co.kr/saithome/images/research/ico06_p.png" />
+                                            </i>
+                                            <h1>Efficient and stable blue quantum dot light emitting diode</h1>
+                                            <div class="infowrap brp">
+                                                <p class="infobox">
+                                                    <span>Category</span>
+                                                    <span>Display Materials</span>
+                                                </p>
+                                                <p class="infobox">
+                                                    <span>Journal</span>
+                                                    <span>Nature</span>
+                                                </p>
+                                                <p class="infobox">
+                                                    <span>Date</span>
+                                                    <span>2020.10.15</span>
+                                                </p>
+                                            </div>
+                                        </article>
+
+                                        <article class="target-item" onclick="javascript:location.href='../research/paper_view.html'" data-category="Battery Materials" data-journal="Advanced Energy Materials" data-date="2020">
+                                            <i>
+                                                <img src="https://www.sait.samsung.co.kr/saithome/images/research/ico07_p.png" />
+                                            </i>
+                                            <h1>Degradation of High-Nickel Layered Oxide Cathodes from Surface to Bulk: A Comprehensive Structural, Chemical, and Electrical Analysis</h1>
+                                            <div class="infowrap brp">
+                                                <p class="infobox">
+                                                    <span>Category</span>
+                                                    <span>Battery Materials</span>
+                                                </p>
+                                                <p class="infobox">
+                                                    <span>Journal</span>
+                                                    <span>Advanced Energy Materials</span>
+                                                </p>
+                                                <p class="infobox">
+                                                    <span>Date</span>
+                                                    <span>2020.09.22</span>
+                                                </p>
+                                            </div>
+                                        </article>
+                                        <!-- 20201104 -->
+
+                                        <article class="target-item" onclick="javascript:location.href='../research/paper_view.html'" data-category="Nano Fabrication" data-journal="Nature Communication" data-date="2020">
+                                            <i>
+                                                <img src="https://www.sait.samsung.co.kr/saithome/images/research/ico05_p.png" />
+                                            </i>
+                                            <h1>Subwavelength pixelated CMOS color sensors based on anti-Hermitian metasurface</h1>
+                                            <div class="infowrap brp">
+                                                <p class="infobox">
+                                                    <span>Category</span>
+                                                    <span>Nano Fabrication</span>
+                                                </p>
+                                                <p class="infobox">
+                                                    <span>Journal</span>
+                                                    <span>Nature Communication</span>
+                                                </p>
+                                                <p class="infobox">
+                                                    <span>Date</span>
+                                                    <span>2020.08.06</span>
+                                                </p>
+                                            </div>
+                                        </article>
+
+                                        <article class="target-item" onclick="javascript:location.href='../research/paper_view.html'" data-category="Next Generation Semiconductor Materials" data-journal="Nature Communication" data-date="2020">
+                                            <i>
+                                                <img src="https://www.sait.samsung.co.kr/saithome/images/research/ico08_p.png" />
+                                            </i>
+                                            <h1>Fully stretchable active-matrix organic light-emitting electrochemical cell array</h1>
+                                            <div class="infowrap brp">
+                                                <p class="infobox">
+                                                    <span>Category</span>
+                                                    <span>Next Generation Semiconductor Materials</span>
+                                                </p>
+                                                <p class="infobox">
+                                                    <span>Journal</span>
+                                                    <span>Nature Communication</span>
+                                                </p>
+                                                <p class="infobox">
+                                                    <span>Date</span>
+                                                    <span>2020.07.03</span>
+                                                </p>
+                                            </div>
+                                        </article>
+
+                                        <article class="target-item" onclick="javascript:location.href='../research/paper_view.html'" data-category="Graphene/2-Dimensional Materials" data-journal="Nature" data-date="2020">
+                                            <i>
+                                                <img src="https://www.sait.samsung.co.kr/saithome/images/research/Icon Semiconductor Materials.png" />
+                                            </i>
+                                            <h1>Ultralow-dielectric-constant amorphous boron nitride</h1>
+                                            <div class="infowrap brp">
+                                                <p class="infobox">
+                                                    <span>Category</span>
+                                                    <span>Graphene/2-Dimensional Materials</span>
+                                                </p>
+                                                <p class="infobox">
+                                                    <span>Journal</span>
+                                                    <span>Nature</span>
+                                                </p>
+                                                <p class="infobox">
+                                                    <span>Date</span>
+                                                    <span>2020.06.24</span>
+                                                </p>
+                                            </div>
+                                        </article>
+
+                                        <article class="target-item" onclick="javascript:location.href='../research/paper_view.html'" data-category="Metaphotonics" data-journal="Nature Communication" data-date="2020">
+                                            <i>
+                                                <img src="https://www.sait.samsung.co.kr/saithome/images/research/ico04_p.png" />
+                                            </i>
+                                            <h1>Overcoming evanescent field decay using 3D-tapered nanocavities for on-chip targeted molecular analysis</h1>
+                                            <div class="infowrap brp">
+                                                <p class="infobox">
+                                                    <span>Category</span>
+                                                    <span>Metaphotonics</span>
+                                                </p>
+                                                <p class="infobox">
+                                                    <span>Journal</span>
+                                                    <span>Nature Communication</span>
+                                                </p>
+                                                <p class="infobox">
+                                                    <span>Date</span>
+                                                    <span>2020.06.10</span>
+                                                </p>
+                                            </div>
+                                        </article>
+
+                                        <article class="target-item" onclick="javascript:location.href='../research/paper_view.html'" data-category="OLED Materials" data-journal="Nature Communication" data-date="2020">
+                                            <i>
+                                                <img src="https://www.sait.samsung.co.kr/saithome/images/research/Icon Display Materials.png" />
+                                            </i>
+                                            <h1>Ancillary ligand increases the efficiency of heteroleptic Ir-based triplet emitters in OLED devices</h1>
+                                            <div class="infowrap brp">
+                                                <p class="infobox">
+                                                    <span>Category</span>
+                                                    <span>OLED Materials</span>
+                                                </p>
+                                                <p class="infobox">
+                                                    <span>Journal</span>
+                                                    <span>Nature Communication</span>
+                                                </p>
+                                                <p class="infobox">
+                                                    <span>Date</span>
+                                                    <span>2020.05.08</span>
+                                                </p>
+                                            </div>
+                                        </article>
+
+                                        <article class="target-item" onclick="javascript:location.href='../research/paper_view.html'" data-category="Battery Materials" data-journal="Nature Energy" data-date="2020">
+                                            <i>
+                                                <img src="https://www.sait.samsung.co.kr/saithome/images/research/Icon Battery Materials.png" />
+                                            </i>
+                                            <h1>High-energy long-cycling all-solid-state lithium metal batteries enabled by silver-carbon composite anodes</h1>
+                                            <div class="infowrap brp">
+                                                <p class="infobox">
+                                                    <span>Category</span>
+                                                    <span>Battery Materials</span>
+                                                </p>
+                                                <p class="infobox">
+                                                    <span>Journal</span>
+                                                    <span>Nature Energy</span>
+                                                </p>
+                                                <p class="infobox">
+                                                    <span>Date</span>
+                                                    <span>2020.03.09</span>
+                                                </p>
+                                            </div>
+                                        </article>
+
+                                        <article class="target-item" onclick="javascript:location.href='../research/paper_view.html'" data-category="Human Augmentation" data-journal="Science Advances" data-date="2020">
+                                            <i>
+                                                <img src="https://www.sait.samsung.co.kr/saithome/images/research/Icon Human augmentation.png" />
+                                            </i>
+                                            <h1>Direct Observation of Glucose Fingerprint Using in vivo Raman Spectroscopy</h1>
+                                            <div class="infowrap brp">
+                                                <p class="infobox">
+                                                    <span>Category</span>
+                                                    <span>Human Augmentation</span>
+                                                </p>
+                                                <p class="infobox">
+                                                    <span>Journal</span>
+                                                    <span>Science Advances</span>
+                                                </p>
+                                                <p class="infobox">
+                                                    <span>Date</span>
+                                                    <span>2020.01.24</span>
+                                                </p>
+                                            </div>
+                                        </article>
+
+                                        <article class="target-item" onclick="javascript:location.href='../research/paper_view.html'" data-category="Display Materials" data-journal="Nature" data-date="2019">
+                                            <i>
+                                                <img src="https://www.sait.samsung.co.kr/saithome/images/research/Icon Display Materials.png" />
+                                            </i>
+                                            <h1>Highly efficient and stable InP/ZnSe/ZnS quantum dot-light-emitting diodes</h1>
+                                            <div class="infowrap brp">
+                                                <p class="infobox">
+                                                    <span>Category</span>
+                                                    <span>Display Materials</span>
+                                                </p>
+                                                <p class="infobox">
+                                                    <span>Journal</span>
+                                                    <span>Nature</span>
+                                                </p>
+                                                <p class="infobox">
+                                                    <span>Date</span>
+                                                    <span>2019.11.28</span>
+                                                </p>
+                                            </div>
+                                        </article>
+
+                                        <article class="target-item" onclick="javascript:location.href='../research/paper_view.html'" data-category="Next Generation Semiconductor Materials" data-journal="Science Advances" data-date="2019">
+                                            <i>
+                                                <img src="https://www.sait.samsung.co.kr/saithome/images/research/ico08_p.png" />
+                                            </i>
+                                            <h1>Strain-sensitive stretchable self-healable semiconducting film for multiplexed skin-like sensor array</h1>
+                                            <div class="infowrap brp">
+                                                <p class="infobox">
+                                                    <span>Category</span>
+                                                    <span>Next Generation Semiconductor Materials</span>
+                                                </p>
+                                                <p class="infobox">
+                                                    <span>Journal</span>
+                                                    <span>Science Advances</span>
+                                                </p>
+                                                <p class="infobox">
+                                                    <span>Date</span>
+                                                    <span>2019.11.08</span>
+                                                </p>
+                                            </div>
+                                        </article>
+
+                                        <article class="target-item" onclick="javascript:location.href='../research/paper_view.html'" data-category="AI Algorithms" data-journal="CVPR(Computer Vision and Pattern Recognition)" data-date="2019">
+                                            <i>
+                                                <img src="https://www.sait.samsung.co.kr/saithome/images/research/Icon AI Algorithms.png" />
+                                            </i>
+                                            <h1>Learning to Quantize Deep Networks by Optimizing Quantization Intervals with Task Loss</h1>
+                                            <div class="infowrap brp">
+                                                <p class="infobox">
+                                                    <span>Category</span>
+                                                    <span>AI Algorithms</span>
+                                                </p>
+                                                <p class="infobox">
+                                                    <span>Conference</span>
+                                                    <span>CVPR(Computer Vision and Pattern Recognition)</span>
+                                                </p>
+                                                <p class="infobox">
+                                                    <span>Date</span>
+                                                    <span>2019.06.19</span>
+                                                </p>
+                                            </div>
+                                        </article>
+
+                                        <article class="target-item" onclick="javascript:location.href='../research/paper_view.html'" data-category="Next Generation Semiconductor Materials" data-journal="Nature Communications" data-date="2019">
+                                            <i>
+                                                <img src="https://www.sait.samsung.co.kr/saithome/images/research/ico08_p.png" />
+                                            </i>
+                                            <h1>Inkjet-printed, stretchable and low voltage synaptic transistor array</h1>
+                                            <div class="infowrap brp">
+                                                <p class="infobox">
+                                                    <span>Category</span>
+                                                    <span>Next Generation Semiconductor Materials</span>
+                                                </p>
+                                                <p class="infobox">
+                                                    <span>Journal</span>
+                                                    <span>Nature Communications</span>
+                                                </p>
+                                                <p class="infobox">
+                                                    <span>Date</span>
+                                                    <span>2019.06.18</span>
+                                                </p>
+                                            </div>
+                                        </article>
+
+                                        <article class="target-item" onclick="javascript:location.href='../research/paper_view.html'" data-category="Display Materials" data-journal="Nature Communications" data-date="2018">
+                                            <i>
+                                                <img src="https://www.sait.samsung.co.kr/saithome/images/research/Icon Display Materials.png" />
+                                            </i>
+                                            <h1>Degradation of blue-phosphorescent organic light-emitting devices involves exciton-induced generation of polaron pair within emitting layers</h1>
+                                            <div class="infowrap brp">
+                                                <p class="infobox">
+                                                    <span>Category</span>
+                                                    <span>Display Materials</span>
+                                                </p>
+                                                <p class="infobox">
+                                                    <span>Journal</span>
+                                                    <span>Nature Communications</span>
+                                                </p>
+                                                <p class="infobox">
+                                                    <span>Date</span>
+                                                    <span>2018.03.23</span>
+                                                </p>
+                                            </div>
+                                        </article>
+
+                                        <article class="target-item" onclick="javascript:location.href='../research/paper_view.html'" data-category="Semiconductor Materials" data-journal="Nature" data-date="2017">
+                                            <i>
+                                                <img src="https://www.sait.samsung.co.kr/saithome/images/research/Icon Semiconductor Materials.png" />
+                                            </i>
+                                            <h1>Highly sensitive X-ray detectors using printable organometallic perovskites with large polycrystalline grains</h1>
+                                            <div class="infowrap brp">
+                                                <p class="infobox">
+                                                    <span>Category</span>
+                                                    <span>Semiconductor Materials</span>
+                                                </p>
+                                                <p class="infobox">
+                                                    <span>Journal</span>
+                                                    <span>Nature</span>
+                                                </p>
+                                                <p class="infobox">
+                                                    <span>Date</span>
+                                                    <span>2017.10.05</span>
+                                                </p>
+                                            </div>
+                                        </article>
+
+                                        <article class="target-item" onclick="javascript:location.href='../research/paper_view.html'" data-category="Next Generation Semiconductor Materials" data-journal="Nature" data-date="2017">
+                                            <i>
+                                                <img src="https://www.sait.samsung.co.kr/saithome/images/research/ico08_p.png" />
+                                            </i>
+                                            <h1>Stretchable sensors, circuits and batteries are about to change our relationship to electronics and each other</h1>
+                                            <div class="infowrap brp">
+                                                <p class="infobox">
+                                                    <span>Category</span>
+                                                    <span>Next Generation Semiconductor Materials</span>
+                                                </p>
+                                                <p class="infobox">
+                                                    <span>Journal</span>
+                                                    <span>Nature</span>
+                                                </p>
+                                                <p class="infobox">
+                                                    <span>Date</span>
+                                                    <span>2017.09.21</span>
+                                                </p>
+                                            </div>
+                                        </article>
+
+                                        <article class="target-item" onclick="javascript:location.href='../research/paper_view.html'" data-category="Semiconductor Materials" data-journal="Science" data-date="2014">
+                                            <i>
+                                                <img src="https://www.sait.samsung.co.kr/saithome/images/research/Icon Semiconductor Materials.png" />
+                                            </i>
+                                            <h1>Repeatable Wafer-Scale Growth of Single-Crystal Monolayer Graphene on a Hydrogen-Terminated Germanium</h1>
+                                            <div class="infowrap brp">
+                                                <p class="infobox">
+                                                    <span>Category</span>
+                                                    <span>Semiconductor Materials</span>
+                                                </p>
+                                                <p class="infobox">
+                                                    <span>Journal</span>
+                                                    <span>Science</span>
+                                                </p>
+                                                <p class="infobox">
+                                                    <span>Date</span>
+                                                    <span>2014.04.18</span>
+                                                </p>
+                                            </div>
+                                        </article>
+
+                                        <article class="target-item" onclick="javascript:location.href='../research/paper_view.html'" data-category="Semiconductor Materials" data-journal="Nature Communications" data-date="2013">
+                                            <i>
+                                                <img src="https://www.sait.samsung.co.kr/saithome/images/research/Icon Semiconductor Materials.png" />
+                                            </i>
+                                            <h1>Integrated chalcogenide switch device by reactive nitrogen and plasma treatment for stackable scalable 3D nanoscale memory</h1>
+                                            <div class="infowrap brp">
+                                                <p class="infobox">
+                                                    <span>Category</span>
+                                                    <span>Semiconductor Materials</span>
+                                                </p>
+                                                <p class="infobox">
+                                                    <span>Journal</span>
+                                                    <span>Nature Communications</span>
+                                                </p>
+                                                <p class="infobox">
+                                                    <span>Date</span>
+                                                    <span>2013.10.16</span>
+                                                </p>
+                                            </div>
+                                        </article>
+
+                                        <article class="target-item" onclick="javascript:location.href='../research/paper_view.html'" data-category="Semiconductor Materials" data-journal="Science" data-date="2013">
+                                            <i>
+                                                <img src="https://www.sait.samsung.co.kr/saithome/images/research/Icon Semiconductor Materials.png" />
+                                            </i>
+                                            <h1>Selective Gas Transport through Few-Layered Graphene and Graphene oxide membranes</h1>
+                                            <div class="infowrap brp">
+                                                <p class="infobox">
+                                                    <span>Category</span>
+                                                    <span>Semiconductor Materials</span>
+                                                </p>
+                                                <p class="infobox">
+                                                    <span>Journal</span>
+                                                    <span>Science</span>
+                                                </p>
+                                                <p class="infobox">
+                                                    <span>Date</span>
+                                                    <span>2013.10.04</span>
+                                                </p>
+                                            </div>
+                                        </article>
+
+                                        <article class="target-item" onclick="javascript:location.href='../research/paper_view.html'" data-category="Semiconductor Materials" data-journal="Science" data-date="2012">
+                                            <i>
+                                                <img src="https://www.sait.samsung.co.kr/saithome/images/research/Icon Semiconductor Materials.png" />
+                                            </i>
+                                            <h1>wafer scale implementation of gate tunable graphene schottky diode</h1>
+                                            <div class="infowrap brp">
+                                                <p class="infobox">
+                                                    <span>Category</span>
+                                                    <span>Semiconductor Materials</span>
+                                                </p>
+                                                <p class="infobox">
+                                                    <span>Journal</span>
+                                                    <span>Science</span>
+                                                </p>
+                                                <p class="infobox">
+                                                    <span>Date</span>
+                                                    <span>2012.06.01</span>
+                                                </p>
+                                            </div>
+                                        </article>
+
+                                        <article class="target-item" onclick="javascript:location.href='../research/paper_view.html'" data-category="Nano Electronics" data-journal="NAT PHOTONICS" data-date="2011">
+                                            <i>
+                                                <img src="https://www.sait.samsung.co.kr/saithome/images/research/Icon Nano Electronics.png" />
+                                            </i>
+                                            <h1>Nearly Single-Crystalline GaN Light-Emitting Diodes on Amorphous Glass Substrates</h1>
+                                            <div class="infowrap brp">
+                                                <p class="infobox">
+                                                    <span>Category</span>
+                                                    <span>Nano Electronics</span>
+                                                </p>
+                                                <p class="infobox">
+                                                    <span>Journal</span>
+                                                    <span>NAT PHOTONICS</span>
+                                                </p>
+                                                <p class="infobox">
+                                                    <span>Date</span>
+                                                    <span>2011.10.10</span>
+                                                </p>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+                <!-- //subContent-->
+
+                <!-- subAside-->
+                <aside id="relatedContents" class="js-scr-sec">
+                    <div class="related__inner">
+                        <div class="related__title">
+                            <h1 class="">Related Contents</h1>
+                            <span class="">Explore more related contents from SAIT!</span>
+                        </div>
+                        <div class="related_wrap">
+                            <article class="js-scr-box">
+                                <a href="../research/paper_list_srt.html">
+                                    <h1>Publications</h1>
+                                </a>
+                            </article>
+                            <article class="js-scr-box">
+                                <a href="../about/history.html">
+                                    <h1>History Of Progress</h1>
+                                </a>
+                            </article>
+                        </div>
+                    </div>
+                </aside>
+                <!-- //subAside-->
+            </section>
+            <!-- //container-->
+            <!-- footer -->
+
+            <footer class="footer" id="footer">
+    <div class="footer__inner">
+        <div class="footer__bottom">
+            <div class="footer__wrap">
+                <div class="footer__etc">
+                    <ul>
+                        <li><a href="../etc/privacy.html">Privacy Statement</a></li>
+                        <li>
+                            <a href="../etc/management.html"><b>Privacy Policy</b></a>
+                        </li>
+                    </ul>
+                    <h2 class="footer__logo">
+                        <img src="../../resources/assets/images/common/footer_logo.svg" alt="" />
+                    </h2>
+                </div>
+                <div class="footer__address">
+                    <div class="footer__row">
+                        <span>130, Samsung-ro, Yeongtong-gu, Suwon-si, Gyeonggi-do, 16678, Korea.</span>
+                        <span>Tel. +82-31-8061-1114</span>
+                    </div>
+                    <div class="footer__row">
+                        <span>Copyright© 2005-2018 SAMSUNG All Rights Reserved.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+            <div id="gnbDimmed" class="dimmed"></div>
+
+            <!-- Global site tag (gtag.js) - Google Analytics -->
+            <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123575008-1"></script>
+            <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag() {
+                    dataLayer.push(arguments);
+                }
+                gtag('js', new Date());
+
+                gtag('config', 'UA-167217135-1');
+            </script>
+            <!-- //footer -->
+        </div>
+        <script>
+            /* if('1' != '1' ){
+	window.onload = function () {
+		$("#list_a").focus();
+	}
+} */
+        </script>
+
+        <script type="text/javascript" src="https://www.sait.samsung.co.kr/saithome/javascripts/lib/TweenMax/TweenMax.min.js"></script>
+        <script type="text/javascript" src="https://www.sait.samsung.co.kr/saithome/javascripts/lib/TweenMax/easing/EasePack.min.js"></script>
+        <script type="text/javascript" src="https://www.sait.samsung.co.kr/saithome/javascripts/design_common.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                console.log($('.item_list article').length);
+                let scrolledAfterClick = false;
+                const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+                const articles = document.querySelectorAll('.target-item');
+                const itemList = document.querySelector('.item_list');
+                const resetButton = document.querySelector('.reset-button');
+                checkboxes.forEach((checkbox) => {
+                    checkbox.addEventListener('change', filterArticles);
+                });
+
+                // reset-button 클릭 시 모든 체크박스 해제 및 모든 기사 표시
+                resetButton.addEventListener('click', function () {
+                    checkboxes.forEach((checkbox) => {
+                        checkbox.checked = false;
+                    });
+                    filterArticles(); // 필터 조건 초기화 후 필터링 함수 호출
+                });
+
+                function filterArticles() {
+                    const selectedFilters = {
+                        category: [],
+                        journal: [],
+                        date: [],
+                    };
+
+                    checkboxes.forEach((checkbox) => {
+                        if (checkbox.checked) {
+                            const label = document.querySelector(`label[for="${checkbox.id}"]`).innerText.trim().toLowerCase();
+                            const filterRow = checkbox.closest('.filter__row');
+                            const strongElement = filterRow ? filterRow.querySelector('.filter__subject strong') : null;
+
+                            if (strongElement && strongElement.innerText.toLowerCase().includes('category')) {
+                                selectedFilters.category.push(label);
+                            } else if (strongElement && strongElement.innerText.toLowerCase().includes('journal')) {
+                                selectedFilters.journal.push(label);
+                            } else if (strongElement && strongElement.innerText.toLowerCase().includes('date')) {
+                                selectedFilters.date.push(label);
+                            }
+                        }
+                    });
+
+                    const matchingArticles = Array.from(articles).filter((article) => {
+                        const category = article.dataset.category ? article.dataset.category.toLowerCase() : '';
+                        const journal = article.dataset.journal ? article.dataset.journal.toLowerCase() : '';
+                        const date = article.dataset.date ? article.dataset.date.toLowerCase() : '';
+
+                        const matchesCategory = selectedFilters.category.length === 0 || selectedFilters.category.includes(category);
+                        const matchesJournal = selectedFilters.journal.length === 0 || selectedFilters.journal.includes(journal);
+                        const matchesDate = selectedFilters.date.length === 0 || selectedFilters.date.includes(date);
+
+                        return matchesCategory && matchesJournal && matchesDate;
+                    });
+
+                    // itemList를 비우고 필터링된 article 요소들을 추가
+
+                    itemList.innerHTML = '';
+                    if (matchingArticles.length > 0) {
+                        matchingArticles.forEach((article) => {
+                            itemList.appendChild(article.cloneNode(true));
+                        });
+                    } else {
+                        itemList.innerHTML = '<p class="no-matching">No matching articles found.</p>';
+                    }
+
+                    scrolledAfterClick = false;
+                }
+                $window.on('scroll wheel', function () {
+                    if (!scrolledAfterClick) {
+                        scrollBg();
+                        scrolledAfterClick = true;
+                    }
+                });
+            });
+        </script>
+        <script>
+            $(function () {
+                $('.filter__tab').on('click', function () {
+                    $(this).toggleClass('active');
+                    if ($(this).hasClass('active')) {
+                        $('.filter__body').slideDown();
+                    } else {
+                        $('.filter__body').stop().slideUp();
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>

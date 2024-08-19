@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- 공통적용헤더정보 -->
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <!-- //공통적용헤더정보 -->
+        <link rel="stylesheet" href="https://www.sait.samsung.co.kr/saithome/mobile/stylesheets/css/common.css" />
+        <script type="text/javascript" src="https://www.sait.samsung.co.kr/saithome/mobile/javascripts/jquery-1.8.2.min.js"></script>
+        <meta name="Keywords" content="SAIT, Samsung Advanced Institute of Technology, 삼성종합기술원, 삼성전자 종합기술원, Samsung research, Samsung R&amp;D, Samsung future technology, R&amp;D, Autonomoucs Driving, Graphene, New materials, QD, Quantum Dot" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+        <title>OLED Materials | Samsung Advanced Institute of Technology</title>
+        <meta name="Description" content="OLED Materials | Samsung Advanced Institute of Technology" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="OLED Materials | Samsung Advanced Institute of Technology" />
+        <meta property="og:description" content="OLED Materials | Samsung Advanced Institute of Technology" />
+        <meta property="og:image" content="" />
+        <meta property="og:url" content="" />
+        <meta property="og:site_name" content="Samsung Advanced Institute of Technology" />
+        <meta name="Author" content="Samsung Advanced Institute of Technology" />
+        <meta name="robots" content="ALL" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="../../resources/assets/mobile/library/swiper/swiper-bundle.min.css" />
+<link rel="stylesheet" href="../../resources/assets/mobile/css/common.css" />
+<link rel="stylesheet" href="../../resources/assets/mobile/css/sub.css" />
+<script type="text/javascript" src="../../resources/assets/mobile/library/jquery/jquery.easing.min.js"></script>
+<script type="text/javascript" src="../../resources/assets/mobile/library/swiper/swiper-bundle.min.js"></script>
+<script type="text/javascript" src="../../resources/assets/mobile/script/common.js"></script>
+
+    </head>
+    <body>
+        <div id="wrap" role="main">
+            <!-- header-->
+            <header class="header" id="header">
+    <div class="header_wrap">
+        <div class="header__inner">
+            <h1 class="header__logo">
+                <a href="../index.html">
+                    <span></span>
+                    <!-- <img src="../../resources/assets/mobile/images/common/logo.svg" alt="SAIT" /> -->
+                </a>
+            </h1>
+
+            <div class="util">
+                <div class="util__search">
+                    <button type="button" id="searchBtn">검색</button>
+                </div>
+                <div class="all-menu">
+                    <button type="button" id="gnbBtn">
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="headerSearch">
+            <fieldset>
+                <legend>headerSearch form</legend>
+                <div id="globalInput">
+                    <label for="globalSearch" class="hidden-txt">search string</label>
+                    <input type="text" id="searchKeyword2" name="searchKeyword" placeholder="Input text" />
+                    <div class="submit_wrap" onclick="AllSearch();">
+                        <a href="javascript:void(0);" type="submit" value="search"></a>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+    </div>
+
+    <script>
+        $('#searchKeyword2').keydown(function (key) {
+            if (key.keyCode == 13) {
+                //키가 13이면 실행 (엔터는 13)
+                AllSearch();
+            }
+        });
+        function AllSearch() {
+            if ($('#searchKeyword2').val() == '') {
+                alert('Please enter your search word');
+                $('#searchKeyword2').focus();
+                return false;
+            }
+            window.location.href = '../etc/search.do?searchKeyword=' + encodeURIComponent($('#searchKeyword2').val());
+            /* window.allSearchFrm.submit(); */
+        }
+    </script>
+
+    <nav id="gnb">
+        <div class="gnb_wrap">
+            <button type="button" id="gnbClose">gnb 닫기</button>
+            <nav>
+                <h2>사이트 전체 메뉴</h2>
+                <ul class="depth1">
+                    <li>
+                        <button type="button">About SAIT <i></i></button>
+                        <ul class="depth2">
+                            <li><a href="../about/who.html">Who We Are</a></li>
+                            <li><a href="../about/history.html">History of Progress</a></li>
+                            <li><a href="../about/labs.html">Global Labs</a></li>
+                            <li><a href="../about/collabo_overview.html">Global Collaboration</a></li>
+                            <li><a href="../about/contact.html">Contact us</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button type="button">Research Areas <i></i></button>
+                        <ul class="depth2" style="">
+                            <li><a href="../research/what.html" style="font-weight: 700">What We Do</a></li>
+                            <li><a href="../research/aiAlgorithms.html">AI Algorithms</a></li>
+                            <li><a href="../research/computingPlatform.html">Computing Platform</a></li>
+                            <li><a href="../research/metaphotonics.html">Si-Photonics / Meta-Photonics</a></li>
+                            <li><a href="../research/displayMaterials.html">Display Materials</a></li>
+                            <li><a href="../research/batteryMaterials.html">Battery Materials</a></li>
+                            <li><a href="../research/semiconductorMaterials.html">Semiconductor Materials &amp; Devices</a></li>
+                            <li><a href="../research/environmentalResearch.html">Environmental &amp; Energy </a></li>
+                            <li><a href="../research/paper_list_srt.html" style="font-weight: 700">Publications</a></li>
+                            <li><a href="../research/paper_list_wtc.html">Best Research Papers</a></li>
+                            <li><a href="../research/infra.html" style="font-weight: 700">Research Infra</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <button type="button">News &amp; Events <i></i></button>
+                        <ul class="depth2" style="">
+                            <li><a href="../about/press.html">Press</a></li>
+                            <li><a href="../event/saif2023.html">AI Forum</a></li>
+                            <li><a href="../event/aiResearcher.html">AI Researcher of the Year</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <button type="button">Join Us <i></i></button>
+                        <ul class="depth2" style="">
+                            <li><a href="../join/application.html">Application Process</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="gnb_banner"></div>
+        </div>
+    </nav>
+</header>
+
+            <!-- //header-->
+
+            <!-- container-->
+            <section id="container" class="research">
+                <!-- subContent-->
+                <section id="content" class="world_research">
+                    <div class="content__container">
+                        <div id="subTitle" class="js-scr-sec">
+                            <h4 class="js-scr-box">Display Materials</h4>
+                            <!-- <p class="js-scr-box">SAIT has successfully developed eco-friendly QD materials for QLED TV and is currently conducting research on QD material and device interface technology for the next generation of QDs and self-luminous EL displays. 
+And, SAIT is also researching novel organic materials for OLED, perovskite, organic image sensor and e-skin applications. We are developing OLED materials with higher efficiency, longer lifetime, lower power consumption and better color purity.</p>                 -->
+                        </div>
+
+                        <!--third-tab-->
+                        <div id="subTab" class="subTab-rt js-scr-sec">
+                            <ul class="js-scr-box">
+                                <li class="ntb">
+                                    <span>
+                                        <a href="../research/displayMaterials.html"> Quantum Dot </a>
+                                    </span>
+                                </li>
+
+                                <li class="ntb">
+                                    <span>
+                                        <a href="../research/displayMaterials_o.html" class="active"> OLED Materials </a>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="third_depth_titbox js-scr-sec">
+                            <p class="tit js-scr-box">OLED Materials</p>
+                            <p class="desc js-scr-box">Novel Technologies for Organic Devices</p>
+                        </div>
+                        <article class="row">
+                            <div class="row__inner">
+                                <div class="art-content">
+                                    <div class="art-content__wrap">
+                                        <div class="art-content__section">
+                                            <div class="art-content__row art-content__row--title js-scr-sec">
+                                                <p class="js-scr-box">
+                                                    SAIT has successfully developed eco-friendly QD materials for QLED and QD-OLED TVs and is currently conducting research on QD material and device interface technology for the next generation of QDs and self-luminous EL displays. And, SAIT is also
+                                                    researching novel organic materials for OLED and e-skin applications. We are developing OLED materials with higher efficiency, longer lifetime, lower power consumption and better color purity.
+                                                </p>
+                                            </div>
+                                            <div class="art-content__row js-scr-sec">
+                                                <strong class="js-scr-box">OLED Materials</strong>
+                                                <p class="js-scr-box">Novel Technologies for Organic Devices</p>
+                                                <div class="art-content__figure js-scr-box">
+                                                    <img src="../../resources/assets/mobile/images/sub/img_dmo_01.jpg" alt="" />
+                                                </div>
+                                            </div>
+                                            <div class="art-content__row js-scr-sec">
+                                                <strong class="js-scr-box">Overview</strong>
+                                                <p class="js-scr-box">
+                                                    Electronic devices assembled by organic materials have recently received more attention in various applications related to light emission or absorption. The organic semiconductor materials used in these applications do not only manage and improve
+                                                    the performance of the device, but also influence the development direction of future electronic devices. Representative applications of electronic devices using organic semiconductor materials include light-emitting diodes (OLEDs) and stretchable
+                                                    devices.
+                                                </p>
+                                                <div class="art-content__figure js-scr-box">
+                                                    <img src="../../resources/assets/mobile/images/sub/img_dmo_02.jpg" alt="" />
+                                                </div>
+                                            </div>
+                                            <div class="art-content__row js-scr-sec">
+                                                <strong class="js-scr-box">Technology Trend</strong>
+                                                <ul>
+                                                    <li class="js-scr-box">
+                                                        <small>① OLED Device</small>
+                                                        <p>
+                                                            OLED is one of the most attractive display technologies and has several advantages. OLEDs can emit a wide range of colors and produce a deep black levels because there is no backlight which resulting in an infinite contrast ratio and a wide
+                                                            viewing angle. OLED displays also have a fast response time, wide color gamut, and low power consumption. One of the biggest advantages of OLED displays are that various concept designs can be made by harnessing its flexibility and
+                                                            transparency. These aspects are significant differentiators and are important in virtual-augmented reality devices and automotive displays. As a result, the demand of the organic semiconductor materials for panel production is growing
+                                                            rapidly.
+                                                        </p>
+                                                    </li>
+                                                    <li class="js-scr-box">
+                                                        <small>② Stretchable Device</small>
+                                                        <p>
+                                                            Stretchable displays are attracting attention as next-generation displays that can improve user experience with new form factors. Intrinsically stretchable TFTs based on organic semiconductor materials can implement stretchable backplanes
+                                                            with high resolution and high freedom, thereby serving free-form platform for display applications such as mobile, AR/VR, and automotive. Conjugated polymers, as one of typical organic semiconductor materials, can transport charge carriers
+                                                            and generally have low modulus. Given the “soft” mechanical nature of these polymers, they offer significant advantages over inorganic semiconductors. Currently, we are developing and researching stretchable conjugated polymer that
+                                                            satisfies both mechanical and electrical properties required for stretchable TFTs. In addition, stretchable conjugated polymers are used as a key material for electronic skin that are intimate contact with the human body, enabling
+                                                            continuous and accurate monitoring of various bio-signals.
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                                <div class="art-content__figure js-scr-box">
+                                                    <img src="../../resources/assets/mobile/images/sub/img_dmo_03.jpg" alt="" />
+                                                </div>
+                                            </div>
+                                            <div class="art-content__row js-scr-sec">
+                                                <strong class="js-scr-box">SAIT Technology</strong>
+                                                <p class="js-scr-box">
+                                                    SAIT is researching novel organic materials for OLED and stretchable backplane. We are developing OLED materials with higher efficiency, longer lifetime, lower power consumption and better color purity. Our ultimate goal is to develop
+                                                    next-generation OLED materials that will lead the future display industry. Also, we are conducting research on free-form devices for displays and sensors through the development of stretchable semiconductor materials. SAIT aims to change the future
+                                                    through realization of a new era of organic electronics by developing the foundational technologies that underpin the next generation of displays.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+                <!-- //subContent-->
+
+                <!--related paper-->
+
+                <section id="related_paper" class="js-scr-sec">
+                    <h1 class="js-scr-box">
+                        <span>Related Paper</span>
+                        <span class="more"><a href="../research/paper_list_wtc.html">more</a></span>
+                    </h1>
+
+                    <div class="related_pp_wrap">
+                        <article class="js-scr-box">
+                            <a class="cm_pp" href="../research/paper_view.html">
+                                <p class="desc">Ancillary ligand increases the efficiency of heteroleptic Ir-based triplet emitters in OLED devices</p>
+                                <p class="date">2020.05.08</p>
+                            </a>
+                        </article>
+
+                        <article class="js-scr-box">
+                            <a class="cm_pp" href="../research/paper_view.html">
+                                <p class="desc">Degradation of blue-phosphorescent organic light-emitting devices involves exciton-induced generation of polaron pair within emitting layers</p>
+                                <p class="date">2018.03.28</p>
+                            </a>
+                        </article>
+                    </div>
+                </section>
+
+                <!--//related paper-->
+
+                <!-- subAside-->
+                <aside id="relatedContents" class="js-scr-sec">
+                    <div class="related__inner">
+                        <div class="related__title">
+                            <h1 class="js-scr-box">Related Contents</h1>
+                            <span class="js-scr-box">Explore more related contents from SAIT!</span>
+                        </div>
+                        <div class="related_wrap">
+                            <article class="js-scr-box">
+                                <a href="../research/paper_list_wtc.html">
+                                    <h1>Research Paper</h1>
+                                </a>
+                            </article>
+                            <article class="js-scr-box">
+                                <a href="../about/press.html">
+                                    <h1>Press</h1>
+                                </a>
+                            </article>
+                        </div>
+                    </div>
+                </aside>
+                <!-- //subAside-->
+            </section>
+            <!-- //container-->
+
+            <!-- footer -->
+
+            <footer class="footer" id="footer">
+    <div class="footer__inner">
+        <div class="footer__bottom">
+            <div class="footer__wrap">
+                <div class="footer__etc">
+                    <ul>
+                        <li><a href="../etc/privacy.html">Privacy Statement</a></li>
+                        <li>
+                            <a href="../etc/management.html"><b>Privacy Policy</b></a>
+                        </li>
+                    </ul>
+                    <h2 class="footer__logo">
+                        <img src="../../resources/assets/mobile/images/common/footer_logo.svg" alt="" />
+                    </h2>
+                </div>
+                <div class="footer__address">
+                    <div class="footer__row">
+                        <span>130, Samsung-ro, Yeongtong-gu, Suwon-si, Gyeonggi-do, 16678, Korea.</span>
+                        <span>Tel. +82-31-8061-1114</span>
+                    </div>
+                    <div class="footer__row">
+                        <span>Copyright© 2005-2018 SAMSUNG All Rights Reserved.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+            <!-- Global site tag (gtag.js) - Google Analytics -->
+            <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123575008-1"></script>
+            <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag() {
+                    dataLayer.push(arguments);
+                }
+                gtag('js', new Date());
+
+                gtag('config', 'UA-167217135-1');
+            </script>
+
+            <!-- //footer -->
+            <div id="gnbDimmed" class="dimmed"></div>
+        </div>
+        <script type="text/javascript" src="https://www.sait.samsung.co.kr/saithome/mobile/javascripts/lib/TweenMax/TweenMax.min.js"></script>
+        <script type="text/javascript" src="https://www.sait.samsung.co.kr/saithome/mobile/javascripts/lib/TweenMax/easing/EasePack.min.js"></script>
+        <script type="text/javascript" src="https://www.sait.samsung.co.kr/saithome/mobile/javascripts/design_common.js"></script>
+        <script>
+            $(document).ready(function () {
+                $('.wtc_pp').css({ background: "#fff url('http://www.sait.samsung.co.kr/webfile/researchArea/201908021458142__ico_06.png')", 'background-repeat': 'no-repeat', 'background-size': '40px 35px;', 'background-position': '25px 25px' });
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,337 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "SamsungOneKR";
+  src: local(※), url(../fonts/SamsungOneKorean-200.woff2) format("woff2"), url(../fonts/SamsungOneKorean-200.woff) format("woff");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SamsungOneKR";
+  src: local(※), url(../fonts/SamsungOneKorean-300.woff2) format("woff2"), url(../fonts/SamsungOneKorean-300.woff) format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SamsungOneKR";
+  src: local(※), url(../fonts/SamsungOneKorean-400.woff2) format("woff2"), url(../fonts/SamsungOneKorean-400.woff) format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SamsungOneKR";
+  src: local(※), url(../fonts/SamsungOneKorean-500.woff2) format("woff2"), url(../fonts/SamsungOneKorean-500.woff) format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SamsungOneKR";
+  src: local(※), url(../fonts/SamsungOneKorean-600.woff2) format("woff2"), url(../fonts/SamsungOneKorean-600.woff) format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SamsungOneKR";
+  src: local(※), url(../fonts/SamsungOneKorean-700.woff2) format("woff2"), url(../fonts/SamsungOneKorean-700.woff) format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SamsungSharpSans";
+  src: local(※), url(../fonts/samsungsharpsans.woff2) format("woff2"), url(../fonts/samsungsharpsans.woff) format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SamsungSharpSans";
+  src: local(※), url(../fonts/samsungsharpsans-medium.woff2) format("woff2"), url(../fonts/samsungsharpsans-medium.woff) format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SamsungSharpSans";
+  src: local(※), url(../fonts/samsungsharpsans-bold.woff2) format("woff2"), url(../fonts/samsungsharpsans-bold.woff) format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+.hidden {
+  visibility: 0;
+  display: none;
+}
+
+body {
+  background-color: transparent;
+}
+
+a {
+  color: inherit;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  z-index: 2;
+}
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+.header__logo {
+  display: inline-block;
+  flex-shrink: 0;
+}
+.header__logo a {
+  display: block;
+}
+.header__logo a span {
+  display: block;
+  width: 131px;
+  height: 26px;
+  background: url(../images/common/logo.svg) center/contain no-repeat;
+}
+.header.active .header__inner {
+  background-color: #fff;
+  border-bottom: 1px solid #a8a8a8;
+}
+.header.active .header__logo a span {
+  background: url(../images/common/logo_black.svg) center/contain no-repeat;
+}
+
+#header {
+  height: auto;
+  background-color: transparent;
+}
+#header h1 {
+  padding: 0;
+  width: auto;
+  text-indent: 0;
+}
+#header #gnb > ul > li > a {
+  display: block;
+  padding: 0 40px;
+  font-family: "SamsungSharpSans";
+  font-weight: 500;
+  line-height: 80px;
+  box-sizing: border-box;
+}
+#header #gnb .gnb_wrap {
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+#header #gnb .gnb_wrap nav {
+  padding-top: 50px;
+  box-sizing: border-box;
+}
+#header #gnb .gnb_wrap #gnbClose {
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  margin-top: 0;
+}
+#header #gnb .gnb_wrap .gnb_banner {
+  margin-top: 20px;
+}
+#header .depth2 li a {
+  color: #636363;
+}
+#header .util {
+  display: flex;
+  gap: 20px;
+}
+#header .util__search button#searchBtn {
+  position: relative;
+  top: auto;
+  right: auto;
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  background: url("../images/icons/icon_search.svg") center/auto no-repeat;
+  font-size: 0;
+}
+#header .util__search button#searchBtn.active {
+  background: none;
+}
+#header .util__search button#searchBtn.active::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: inline-block;
+  width: 28px;
+  height: 1px;
+  background-color: #fff;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+#header .util__search button#searchBtn.active::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: inline-block;
+  width: 28px;
+  height: 1px;
+  background-color: #fff;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+#header .all-menu {
+  font-size: 0;
+}
+#header .all-menu button#gnbBtn {
+  position: relative;
+  top: auto;
+  left: auto;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 28px;
+  height: 28px;
+  padding: 5px 0;
+  box-sizing: border-box;
+  background: none;
+  font-size: 0;
+}
+#header .all-menu button#gnbBtn::before {
+  content: "";
+  display: inline-block;
+  width: 21px;
+  height: 1px;
+  background-color: #fff;
+}
+#header .all-menu button#gnbBtn span {
+  display: inline-block;
+  width: 21px;
+  height: 1px;
+  background-color: #fff;
+}
+#header .all-menu button#gnbBtn::after {
+  content: "";
+  display: inline-block;
+  width: 21px;
+  height: 1px;
+  background-color: #fff;
+}
+#header #headerSearch #globalInput input[type=text] {
+  padding-right: 50px;
+}
+#header #headerSearch #globalInput input[type=text]:focus {
+  border-color: #1428A0 !important;
+}
+#header #headerSearch #globalInput .submit_wrap {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-size: 22px auto;
+  top: 0;
+  right: 0;
+}
+#header #headerSearch #globalInput .submit_wrap a {
+  display: block;
+}
+#header.active .all-menu button#gnbBtn::before, #header.active .all-menu button#gnbBtn::after {
+  background-color: #000;
+}
+#header.active .all-menu button#gnbBtn span {
+  background-color: #000;
+}
+#header.active .util button#searchBtn::before, #header.active .util button#searchBtn::after {
+  background-color: #000;
+}
+
+.footer {
+  position: relative;
+}
+.footer#footer {
+  padding: 0;
+  background-color: #000;
+}
+.footer__banner a {
+  display: block;
+  position: relative;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+.footer__banner a > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+.footer__banner a .footer__wrap {
+  position: relative;
+  padding: 70px 0 315px;
+  box-sizing: border-box;
+  color: #fff;
+}
+.footer__banner a .footer__wrap h2 {
+  font-family: "SamsungSharpSans";
+  font-size: 40px;
+  font-weight: 700;
+}
+.footer__banner a .footer__wrap h3 {
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 400;
+}
+.footer__bottom {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+.footer__bottom .footer__wrap {
+  padding: 30px 20px;
+  background-color: #010914;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  box-sizing: border-box;
+}
+.footer__etc ul {
+  display: flex;
+  gap: 30px;
+}
+.footer__etc ul li a {
+  font-size: 14px;
+  color: #fff;
+}
+.footer__etc ul li a b {
+  font-weight: 700;
+}
+.footer__logo {
+  margin-top: 20px;
+  display: inline-block;
+  width: 91px;
+}
+.footer__logo img {
+  display: inline-block;
+  width: 100%;
+}
+.footer__address {
+  margin-top: 20px;
+}
+.footer__row {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+.footer__row:first-child {
+  margin-top: 0;
+}
+.footer__row span {
+  font-size: 12px;
+  line-height: 18px;
+  color: #7D8794;
+}

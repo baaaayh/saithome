@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- 공통적용헤더정보 -->
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <!-- //공통적용헤더정보 -->
+        <link rel="stylesheet" href="https://www.sait.samsung.co.kr/saithome/mobile/stylesheets/css/common.css" />
+        <link rel="stylesheet" href="https://www.sait.samsung.co.kr/saithome/mobile/stylesheets/2024/sub.css" />
+        <link rel="shortcut icon" href="https://www.sait.samsung.co.kr/saithome/images/favicon.ico" />
+        <script type="text/javascript" src="https://www.sait.samsung.co.kr/saithome/mobile/javascripts/jquery-1.8.2.min.js"></script>
+        <meta name="Keywords" content="SAIT, Samsung Advanced Institute of Technology, 삼성종합기술원, 삼성전자 종합기술원, Samsung research, Samsung R&amp;D, Samsung future technology, R&amp;D, Autonomoucs Driving, Graphene, New materials, QD, Quantum Dot" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+        <title>Global Collaboration | Samsung Advanced Institute of Technology</title>
+        <meta name="Description" content="Global Collaboration | Samsung Advanced Institute of Technology" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Global Collaboration | Samsung Advanced Institute of Technology" />
+        <meta property="og:description" content="Global Collaboration | Samsung Advanced Institute of Technology" />
+        <meta property="og:image" content="" />
+        <meta property="og:url" content="" />
+        <meta property="og:site_name" content="Samsung Advanced Institute of Technology" />
+        <meta name="Author" content="Samsung Advanced Institute of Technology" />
+        <meta name="robots" content="ALL" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="../../resources/assets/mobile/library/swiper/swiper-bundle.min.css" />
+<link rel="stylesheet" href="../../resources/assets/mobile/css/common.css" />
+<link rel="stylesheet" href="../../resources/assets/mobile/css/sub.css" />
+<script type="text/javascript" src="../../resources/assets/mobile/library/jquery/jquery.easing.min.js"></script>
+<script type="text/javascript" src="../../resources/assets/mobile/library/swiper/swiper-bundle.min.js"></script>
+<script type="text/javascript" src="../../resources/assets/mobile/script/common.js"></script>
+
+    </head>
+    <body>
+        <div id="wrap" role="main">
+            <!-- header-->
+            <header class="header" id="header">
+    <div class="header_wrap">
+        <div class="header__inner">
+            <h1 class="header__logo">
+                <a href="../index.html">
+                    <span></span>
+                    <!-- <img src="../../resources/assets/mobile/images/common/logo.svg" alt="SAIT" /> -->
+                </a>
+            </h1>
+
+            <div class="util">
+                <div class="util__search">
+                    <button type="button" id="searchBtn">검색</button>
+                </div>
+                <div class="all-menu">
+                    <button type="button" id="gnbBtn">
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="headerSearch">
+            <fieldset>
+                <legend>headerSearch form</legend>
+                <div id="globalInput">
+                    <label for="globalSearch" class="hidden-txt">search string</label>
+                    <input type="text" id="searchKeyword2" name="searchKeyword" placeholder="Input text" />
+                    <div class="submit_wrap" onclick="AllSearch();">
+                        <a href="javascript:void(0);" type="submit" value="search"></a>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+    </div>
+
+    <script>
+        $('#searchKeyword2').keydown(function (key) {
+            if (key.keyCode == 13) {
+                //키가 13이면 실행 (엔터는 13)
+                AllSearch();
+            }
+        });
+        function AllSearch() {
+            if ($('#searchKeyword2').val() == '') {
+                alert('Please enter your search word');
+                $('#searchKeyword2').focus();
+                return false;
+            }
+            window.location.href = '../etc/search.do?searchKeyword=' + encodeURIComponent($('#searchKeyword2').val());
+            /* window.allSearchFrm.submit(); */
+        }
+    </script>
+
+    <nav id="gnb">
+        <div class="gnb_wrap">
+            <button type="button" id="gnbClose">gnb 닫기</button>
+            <nav>
+                <h2>사이트 전체 메뉴</h2>
+                <ul class="depth1">
+                    <li>
+                        <button type="button">About SAIT <i></i></button>
+                        <ul class="depth2">
+                            <li><a href="../about/who.html">Who We Are</a></li>
+                            <li><a href="../about/history.html">History of Progress</a></li>
+                            <li><a href="../about/labs.html">Global Labs</a></li>
+                            <li><a href="../about/collabo_overview.html">Global Collaboration</a></li>
+                            <li><a href="../about/contact.html">Contact us</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button type="button">Research Areas <i></i></button>
+                        <ul class="depth2" style="">
+                            <li><a href="../research/what.html" style="font-weight: 700">What We Do</a></li>
+                            <li><a href="../research/aiAlgorithms.html">AI Algorithms</a></li>
+                            <li><a href="../research/computingPlatform.html">Computing Platform</a></li>
+                            <li><a href="../research/metaphotonics.html">Si-Photonics / Meta-Photonics</a></li>
+                            <li><a href="../research/displayMaterials.html">Display Materials</a></li>
+                            <li><a href="../research/batteryMaterials.html">Battery Materials</a></li>
+                            <li><a href="../research/semiconductorMaterials.html">Semiconductor Materials &amp; Devices</a></li>
+                            <li><a href="../research/environmentalResearch.html">Environmental &amp; Energy </a></li>
+                            <li><a href="../research/paper_list_srt.html" style="font-weight: 700">Publications</a></li>
+                            <li><a href="../research/paper_list_wtc.html">Best Research Papers</a></li>
+                            <li><a href="../research/infra.html" style="font-weight: 700">Research Infra</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <button type="button">News &amp; Events <i></i></button>
+                        <ul class="depth2" style="">
+                            <li><a href="../about/press.html">Press</a></li>
+                            <li><a href="../event/saif2023.html">AI Forum</a></li>
+                            <li><a href="../event/aiResearcher.html">AI Researcher of the Year</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <button type="button">Join Us <i></i></button>
+                        <ul class="depth2" style="">
+                            <li><a href="../join/application.html">Application Process</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="gnb_banner"></div>
+        </div>
+    </nav>
+</header>
+
+            <!-- //header-->
+
+            <!-- container-->
+            <section id="container" class="about">
+                <!-- subVisual-->
+                <div id="subVisual">
+                    <img src="https://www.sait.samsung.co.kr/saithome/mobile/images/about/about_visual.jpg" alt="" />
+                    <div class="tit_wrap">
+                        <h3>
+                            <span> Samsung Advanced <br />Institute of Technology </span>
+                        </h3>
+                    </div>
+                </div>
+                <!-- //subVisual-->
+
+                <!-- 2022-11-02 작업 : 시작 -->
+                <style type="text/css">
+                    .new2022 #subTab {
+                        overflow-x: scroll;
+                        overflow-y: hidden;
+                        height: 70px;
+                        -webkit-user-drag: auto;
+                    }
+                    .new2022 #subTab ul {
+                        width: 130%;
+                    }
+                    .new2022 #subTab ul li {
+                        width: calc(88% / 5);
+                    }
+                    .new2022 .new2022__wrap {
+                        margin-top: 50px;
+                        padding: 0 60px;
+                        padding-bottom: 35px;
+                        border-bottom: 1px solid #a8a8a8;
+                    }
+                    .new2022 .new2022__year {
+                        margin-bottom: 12px;
+                        font-size: 25px;
+                        line-height: 20px;
+                        color: #1428a0;
+                    }
+                    .new2022 .new2022__list > li {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 20px;
+                    }
+                    .new2022 .new2022__list > li ~ li {
+                        margin-top: 25px;
+                    }
+                    .new2022 .new2022__list b {
+                        font-size: 14px;
+                        line-height: 20px;
+                        color: #333;
+                        font-weight: bold;
+                    }
+                    .new2022 .new2022__list span {
+                        font-size: 12px;
+                        line-height: 16px;
+                        color: #636363;
+                        font-weight: normal;
+                    }
+                </style>
+
+                <!-- 2024-06-13 DT 테그 font-weight 조절 -->
+                <style type="text/css">
+                    .gro_detail > dl > dt {
+                        font-weight: 700;
+                    }
+                </style>
+
+                <!-- subContent-->
+                <section id="content" class="process new2022">
+                    <div class="content__container">
+                        <div id="subTitle" class="js-scr-sec">
+                            <h4 class="js-scr-box">Global Collaboration</h4>
+                        </div>
+                        <div id="subTab" class="js-scr-sec">
+                            <ul class="js-scr-box">
+                                <li><a href="../about/collabo_overview.html">Overview</a></li>
+                                <li><a href="../about/collabo_process.html" class="active">Process</a></li>
+                                <li><a href="../about/collabo_apply.html">Apply</a></li>
+                                <li><a href="../about/collabo_faq.html">FAQ</a></li>
+                                <li><a href="../about/collabo_recipients.html">Recipients</a></li>
+                            </ul>
+                        </div>
+                        <article class="row">
+                            <div class="row__inner">
+                                <div class="row__wrap js-scr-sec">
+                                    <h5 class="title mb30 js-scr-box">GRO Program Process</h5>
+                                    <ul class="dash-list">
+                                        <li class="js-scr-box">Applicants must be a university professor or researcher.</li>
+                                        <li class="js-scr-box">University shall accept GRO Research Agreement (RA) as part of the proposal submission process.</li>
+                                        <li class="js-scr-box gray star"><small>If the university would like to review GRO RA before submission, detailed GRO RA could be sent via email upon request of authorized official of the university.</small></li>
+                                    </ul>
+                                </div>
+                                <div class="row__wrap">
+                                    <div class="rprocess js-scr-sec">
+                                        <ul>
+                                            <li class="js-scr-box">
+                                                <div class="rprocess__inner">
+                                                    <div class="rprocess__figure">
+                                                        <img src="../../resources/assets/mobile/images/sub/collabo_process_01.svg" alt="" />
+                                                    </div>
+                                                    <div class="rprocess__content">
+                                                        <div class="rprocess__num">June</div>
+                                                        <div class="rprocess__tit">GRO Open</div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="js-scr-box">
+                                                <div class="rprocess__inner">
+                                                    <div class="rprocess__figure">
+                                                        <img src="../../resources/assets/mobile/images/sub/collabo_process_02.svg" alt="" />
+                                                    </div>
+                                                    <div class="rprocess__content">
+                                                        <div class="rprocess__num">June ~ August</div>
+                                                        <div class="rprocess__tit">Abstract Proposal Submission</div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="js-scr-box">
+                                                <div class="rprocess__inner">
+                                                    <div class="rprocess__figure">
+                                                        <img src="../../resources/assets/mobile/images/sub/collabo_process_03.svg" alt="" />
+                                                    </div>
+                                                    <div class="rprocess__content">
+                                                        <div class="rprocess__num">September</div>
+                                                        <div class="rprocess__tit">Candidates<br />Announcement</div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="js-scr-box">
+                                                <div class="rprocess__inner">
+                                                    <div class="rprocess__figure">
+                                                        <img src="../../resources/assets/mobile/images/sub/collabo_process_04.svg" alt="" />
+                                                    </div>
+                                                    <div class="rprocess__content">
+                                                        <div class="rprocess__num">October</div>
+                                                        <div class="rprocess__tit">Full Proposal Submission &amp; Interview</div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="js-scr-box">
+                                                <div class="rprocess__inner">
+                                                    <div class="rprocess__figure">
+                                                        <img src="../../resources/assets/mobile/images/sub/collabo_process_05.svg" alt="" />
+                                                    </div>
+                                                    <div class="rprocess__content">
+                                                        <div class="rprocess__num">November</div>
+                                                        <div class="rprocess__tit">Recipients Announcement</div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="js-scr-box">
+                                                <div class="rprocess__inner">
+                                                    <div class="rprocess__figure">
+                                                        <img src="../../resources/assets/mobile/images/sub/collabo_process_06.svg" alt="" />
+                                                    </div>
+                                                    <div class="rprocess__content">
+                                                        <div class="rprocess__num">January</div>
+                                                        <div class="rprocess__tit">Project Kickoff</div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="row">
+                            <div class="row__inner js-scr-sec">
+                                <h5 class="title mb30 js-scr-box">GRO Year Calendar</h5>
+                                <div class="calendar">
+                                    <ul class="calendar__list">
+                                        <li class="calendar__item js-scr-box">
+                                            <div class="calendar__box">
+                                                <div class="calendar__inner">
+                                                    <div class="calendar__date">
+                                                        <span>2024</span>
+                                                        <strong>06</strong>
+                                                    </div>
+                                                    <div class="calendar__contents">
+                                                        <div class="small-title">GRO Theme Open</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="calendar__item js-scr-box">
+                                            <div class="calendar__box">
+                                                <div class="calendar__inner">
+                                                    <div class="calendar__date">
+                                                        <span>2024</span>
+                                                        <strong>06~08</strong>
+                                                    </div>
+                                                    <div class="calendar__contents">
+                                                        <div class="small-title">Proposal Submission (24th June ~ 19th August, 09:00 A.M. Korea Standard Time, UTC+9)</div>
+                                                        <div class="calendar__text">
+                                                            <p>
+                                                                Applicants shall submit a abstract proposal. (3 page or less)<br />
+                                                                All documents are only accepted via the GRO submission website prior to the deadline. After the deadline, the applicants are not able to submit, amend or modify proposals.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="calendar__item js-scr-box">
+                                            <div class="calendar__box">
+                                                <div class="calendar__inner">
+                                                    <div class="calendar__date">
+                                                        <span>2024</span>
+                                                        <strong>09</strong>
+                                                    </div>
+                                                    <div class="calendar__contents">
+                                                        <div class="small-title">Proposal Screening and Candidates Announcement</div>
+                                                        <div class="calendar__text">
+                                                            <p>SAMSUNG Technology Board members review all the submitted proposals in accordance with GRO evaluation criteria as below.</p>
+                                                            <ul class="dash-list">
+                                                                <li>The innovativeness of the research</li>
+                                                                <li>The potential societal and/or business impact expected from the development, dissemination and use of project results</li>
+                                                                <li>The feasibility of the research with respect to the planned time, objectives, intended results and resources available</li>
+                                                                <li>The research competencies of the principal investigator in relevant field(s)</li>
+                                                            </ul>
+                                                            <p>All applicants will be informed of results by email in September.<br />We do not provide individual feedback on proposals not selected for funding.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="calendar__item js-scr-box">
+                                            <div class="calendar__box">
+                                                <div class="calendar__inner">
+                                                    <div class="calendar__date">
+                                                        <span>2024</span>
+                                                        <strong>10</strong>
+                                                    </div>
+                                                    <div class="calendar__contents">
+                                                        <div class="small-title">Full Proposal Submission and Interview</div>
+                                                        <div class="calendar__text">
+                                                            <p>
+                                                                Up to two candidates are selected for each sub-theme, and we may provide Samsung’s research direction and interest. Candidates shall submit a full proposal and RA acceptance letter, and the final recipients will be selected through a
+                                                                video interview in October.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="calendar__item js-scr-box">
+                                            <div class="calendar__box">
+                                                <div class="calendar__inner">
+                                                    <div class="calendar__date">
+                                                        <span>2024</span>
+                                                        <strong>11</strong>
+                                                    </div>
+                                                    <div class="calendar__contents">
+                                                        <div class="small-title">Announcement of the Recipients</div>
+                                                        <div class="calendar__text">
+                                                            <p>The final Recipients will be announced on this website in November.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="calendar__item js-scr-box">
+                                            <div class="calendar__box">
+                                                <div class="calendar__inner">
+                                                    <div class="calendar__date">
+                                                        <span>2025</span>
+                                                        <strong>01</strong>
+                                                    </div>
+                                                    <div class="calendar__contents">
+                                                        <div class="small-title">GRO Project Starts</div>
+                                                        <div class="calendar__text">
+                                                            <p>Samsung recommends projects start in January 2025. If the contract cannot be completed by March 2025, the project may be dropped.</p>
+                                                            <ul class="dash-list">
+                                                                <li class="gray">
+                                                                    <strong>Confidential and Proprietary Information</strong>
+                                                                    <p>
+                                                                        Participants shall ensure that no confidential or proprietary information is included in submitted proposals. SAMSUNG will treat all information submitted in proposals as non-confidential and non-proprietary. Under the GRO
+                                                                        Program, submitted proposals will be reviewed by SAMSUNG personnel, including SAMSUNG researchers, who will become knowledgeable of the information provided by the university researcher in the project proposal. During the
+                                                                        evaluation process, SAMSUNG cannot maintain the confidentiality of information set forth in the proposals. Accordingly, SAMSUNG does not require, and does not desire, to receive any infor- mation that may be deemed confidential
+                                                                        by the university researcher or the university.
+                                                                    </p>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+                <!-- //subContent-->
+
+                <!-- subAside-->
+                <aside id="relatedContents" class="js-scr-sec">
+                    <div class="related__inner">
+                        <div class="related__title">
+                            <h1 class="js-scr-box">Related Contents</h1>
+                            <span class="js-scr-box">Explore more related contents from SAIT!</span>
+                        </div>
+                        <div class="related_wrap">
+                            <article class="js-scr-box">
+                                <a href="../about/who.html">
+                                    <h1>Who We Are</h1>
+                                </a>
+                            </article>
+                            <article class="js-scr-box">
+                                <a href="../research/what.html">
+                                    <h1>What We Do</h1>
+                                </a>
+                            </article>
+                        </div>
+                    </div>
+                </aside>
+                <!-- //subAside-->
+            </section>
+            <!-- //container-->
+
+            <!-- footer -->
+
+            <footer class="footer" id="footer">
+    <div class="footer__inner">
+        <div class="footer__bottom">
+            <div class="footer__wrap">
+                <div class="footer__etc">
+                    <ul>
+                        <li><a href="../etc/privacy.html">Privacy Statement</a></li>
+                        <li>
+                            <a href="../etc/management.html"><b>Privacy Policy</b></a>
+                        </li>
+                    </ul>
+                    <h2 class="footer__logo">
+                        <img src="../../resources/assets/mobile/images/common/footer_logo.svg" alt="" />
+                    </h2>
+                </div>
+                <div class="footer__address">
+                    <div class="footer__row">
+                        <span>130, Samsung-ro, Yeongtong-gu, Suwon-si, Gyeonggi-do, 16678, Korea.</span>
+                        <span>Tel. +82-31-8061-1114</span>
+                    </div>
+                    <div class="footer__row">
+                        <span>Copyright© 2005-2018 SAMSUNG All Rights Reserved.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+            <!-- Global site tag (gtag.js) - Google Analytics -->
+            <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123575008-1"></script>
+            <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag() {
+                    dataLayer.push(arguments);
+                }
+                gtag('js', new Date());
+
+                gtag('config', 'UA-167217135-1');
+            </script>
+
+            <!-- //footer -->
+            <div id="gnbDimmed" class="dimmed"></div>
+        </div>
+        <script type="text/javascript" src="https://www.sait.samsung.co.kr/saithome/mobile/javascripts/lib/TweenMax/TweenMax.min.js"></script>
+        <script type="text/javascript" src="https://www.sait.samsung.co.kr/saithome/mobile/javascripts/lib/TweenMax/easing/EasePack.min.js"></script>
+        <script type="text/javascript" src="https://www.sait.samsung.co.kr/saithome/mobile/javascripts/design_common.js"></script>
+    </body>
+</html>

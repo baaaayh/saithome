@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- 공통적용헤더정보 -->
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <!-- //공통적용헤더정보 -->
+        <link rel="stylesheet" href="https://www.sait.samsung.co.kr/saithome/mobile/stylesheets/css/common.css" />
+        <script type="text/javascript" src="https://www.sait.samsung.co.kr/saithome/mobile/javascripts/jquery-1.8.2.min.js"></script>
+        <meta name="Keywords" content="SAIT, Samsung Advanced Institute of Technology, 삼성종합기술원, 삼성전자 종합기술원, Samsung research, Samsung R&amp;D, Samsung future technology, R&amp;D, Autonomoucs Driving, Graphene, New materials, QD, Quantum Dot" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+        <title>Computing Platform | Samsung Advanced Institute of Technology</title>
+        <meta name="Description" content="Computing Platform | Samsung Advanced Institute of Technology" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Computing Platform | Samsung Advanced Institute of Technology" />
+        <meta property="og:description" content="Computing Platform | Samsung Advanced Institute of Technology" />
+        <meta property="og:image" content="" />
+        <meta property="og:url" content="" />
+        <meta property="og:site_name" content="Samsung Advanced Institute of Technology" />
+        <meta name="Author" content="Samsung Advanced Institute of Technology" />
+        <meta name="robots" content="ALL" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="../../resources/assets/mobile/library/swiper/swiper-bundle.min.css" />
+<link rel="stylesheet" href="../../resources/assets/mobile/css/common.css" />
+<link rel="stylesheet" href="../../resources/assets/mobile/css/sub.css" />
+<script type="text/javascript" src="../../resources/assets/mobile/library/jquery/jquery.easing.min.js"></script>
+<script type="text/javascript" src="../../resources/assets/mobile/library/swiper/swiper-bundle.min.js"></script>
+<script type="text/javascript" src="../../resources/assets/mobile/script/common.js"></script>
+
+    </head>
+    <body>
+        <div id="wrap" role="main">
+            <!-- header-->
+            <header class="header" id="header">
+    <div class="header_wrap">
+        <div class="header__inner">
+            <h1 class="header__logo">
+                <a href="../index.html">
+                    <span></span>
+                    <!-- <img src="../../resources/assets/mobile/images/common/logo.svg" alt="SAIT" /> -->
+                </a>
+            </h1>
+
+            <div class="util">
+                <div class="util__search">
+                    <button type="button" id="searchBtn">검색</button>
+                </div>
+                <div class="all-menu">
+                    <button type="button" id="gnbBtn">
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="headerSearch">
+            <fieldset>
+                <legend>headerSearch form</legend>
+                <div id="globalInput">
+                    <label for="globalSearch" class="hidden-txt">search string</label>
+                    <input type="text" id="searchKeyword2" name="searchKeyword" placeholder="Input text" />
+                    <div class="submit_wrap" onclick="AllSearch();">
+                        <a href="javascript:void(0);" type="submit" value="search"></a>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+    </div>
+
+    <script>
+        $('#searchKeyword2').keydown(function (key) {
+            if (key.keyCode == 13) {
+                //키가 13이면 실행 (엔터는 13)
+                AllSearch();
+            }
+        });
+        function AllSearch() {
+            if ($('#searchKeyword2').val() == '') {
+                alert('Please enter your search word');
+                $('#searchKeyword2').focus();
+                return false;
+            }
+            window.location.href = '../etc/search.do?searchKeyword=' + encodeURIComponent($('#searchKeyword2').val());
+            /* window.allSearchFrm.submit(); */
+        }
+    </script>
+
+    <nav id="gnb">
+        <div class="gnb_wrap">
+            <button type="button" id="gnbClose">gnb 닫기</button>
+            <nav>
+                <h2>사이트 전체 메뉴</h2>
+                <ul class="depth1">
+                    <li>
+                        <button type="button">About SAIT <i></i></button>
+                        <ul class="depth2">
+                            <li><a href="../about/who.html">Who We Are</a></li>
+                            <li><a href="../about/history.html">History of Progress</a></li>
+                            <li><a href="../about/labs.html">Global Labs</a></li>
+                            <li><a href="../about/collabo_overview.html">Global Collaboration</a></li>
+                            <li><a href="../about/contact.html">Contact us</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button type="button">Research Areas <i></i></button>
+                        <ul class="depth2" style="">
+                            <li><a href="../research/what.html" style="font-weight: 700">What We Do</a></li>
+                            <li><a href="../research/aiAlgorithms.html">AI Algorithms</a></li>
+                            <li><a href="../research/computingPlatform.html">Computing Platform</a></li>
+                            <li><a href="../research/metaphotonics.html">Si-Photonics / Meta-Photonics</a></li>
+                            <li><a href="../research/displayMaterials.html">Display Materials</a></li>
+                            <li><a href="../research/batteryMaterials.html">Battery Materials</a></li>
+                            <li><a href="../research/semiconductorMaterials.html">Semiconductor Materials &amp; Devices</a></li>
+                            <li><a href="../research/environmentalResearch.html">Environmental &amp; Energy </a></li>
+                            <li><a href="../research/paper_list_srt.html" style="font-weight: 700">Publications</a></li>
+                            <li><a href="../research/paper_list_wtc.html">Best Research Papers</a></li>
+                            <li><a href="../research/infra.html" style="font-weight: 700">Research Infra</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <button type="button">News &amp; Events <i></i></button>
+                        <ul class="depth2" style="">
+                            <li><a href="../about/press.html">Press</a></li>
+                            <li><a href="../event/saif2023.html">AI Forum</a></li>
+                            <li><a href="../event/aiResearcher.html">AI Researcher of the Year</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <button type="button">Join Us <i></i></button>
+                        <ul class="depth2" style="">
+                            <li><a href="../join/application.html">Application Process</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="gnb_banner"></div>
+        </div>
+    </nav>
+</header>
+
+            <!-- //header-->
+
+            <!-- container-->
+            <section id="container" class="research">
+                <!-- subContent-->
+                <section id="content" class="world_research">
+                    <div class="content__container">
+                        <div id="subTitle" class="js-scr-sec">
+                            <h4 class="js-scr-box">Computing Platform</h4>
+                            <!-- <p class="js-scr-box">We are researching the increasingly crucial computing platform technology with the advancement of AI.</p> -->
+                        </div>
+                        <!--third-tab-->
+                        <div class="third_depth_titbox js-scr-sec">
+                            <p class="tit js-scr-box">Computing Platform</p>
+                            <p class="desc js-scr-box">A new computing processor that mimics the human brain</p>
+                        </div>
+                        <article class="row">
+                            <div class="row__inner">
+                                <div class="art-content">
+                                    <div class="art-content__wrap">
+                                        <div class="art-content__section">
+                                            <div class="art-content__row art-content__row--title js-scr-sec">
+                                                <p class="js-scr-box">
+                                                    As AI technology advances, the development of AI hardware becomes incresingly crucial. SAIT is dedicated to creating diverse and innovative technologies to meet this demand.
+                                                    <br />
+                                                    We focus on cutting-edge research and development to drive the future of AI computing platform technology.<br />
+                                                    Furthermore, we are dedicated to bring new computing technologies into the world, which are expected to impact all aspects of our lives in the future. They include brain-inspired computing, quantum computing and more.
+                                                </p>
+                                                <div class="art-content__figure js-scr-box">
+                                                    <img src="../../resources/assets/mobile/images/sub/img_cp_01.jpg" alt="" />
+                                                </div>
+                                            </div>
+                                            <div class="art-content__row js-scr-sec">
+                                                <strong class="js-scr-box">System Semiconductor</strong>
+                                                <p class="js-scr-box">
+                                                    System semiconductor is the key technology in the future-leading fields such as AI, HPC, and etc.
+                                                    <br /><br />
+                                                    While the industry is increasingly in need for high-performance computing devices, the current semiconductor technology faces a major challenge which indicates the end of Moore’s Law.
+                                                    <br /><br />
+                                                    We intend to overcome this challenge by developing an innovative semiconductor at system-level. Such system semiconductor requires convergence of various technologies enabling specialized architectures. For this, we seek technologies to design
+                                                    creative processors and build large-scale chiplets.
+                                                    <br /><br />
+                                                    Through our creative processor solution, we design a RISC-V CPU core which can be customized and optimized for given applications in terms of power, performance, and area (PPA).
+                                                    <br /><br />
+                                                    Through our large-scale chiplet solution, we build a scalable system with multiple processors and memories that can effectively maneuver the surge in data and workloads.
+                                                    <br /><br />
+                                                    Eventually, we expect these solutions to have the synergy that can lead beyond Moore’s Law.
+                                                </p>
+                                                <div class="art-content__figure js-scr-box">
+                                                    <img src="../../resources/assets/mobile/images/sub/img_cp_02.jpg" alt="" />
+                                                </div>
+                                            </div>
+                                            <div class="art-content__row js-scr-sec">
+                                                <strong class="js-scr-box">High Performance Computing</strong>
+                                                <p class="js-scr-box">
+                                                    A supercomputer performs at or near the highest operational rate for computers. Supercomputers have been used to advance scientific and engineering breakthroughs. By handling very large databases and performing a great amount of computations, they
+                                                    continue to push the limits of operational speed.
+                                                    <br /><br />
+                                                    At any given time, there are well-publicized supercomputers that operate at extremely high speeds relative to all other computers. The race to have the fastest, most powerful supercomputer never ends and the competition doesn’t seem to be slowing
+                                                    down anytime soon. With scientists and engineers using supercomputers for important tasks like studying diseases and simulating new materials, we hope that the advances will benefit all of humanity.
+                                                    <br /><br />
+                                                    Samsung has its own supercomputing center, which plays an important role in the field of computational science and is applied to a wide range of tasks in various fields. The Samsung Supercomputer has been used to compute novel structures and
+                                                    properties of chemical compounds, polymers, and crystals. It also has served as a key element in accelerating Samsung’s artificial intelligence research in machine learning, deep learning, and data analytics.
+                                                    <br /><br />
+                                                    Main research topics include new machine learning software, parallel computing, simulation workflow, automation and optimized deployment, novel materials discovery and simulation, along with management of real-time computing grids, etc.
+                                                </p>
+                                                <div class="art-content__figure js-scr-box">
+                                                    <img src="../../resources/assets/mobile/images/sub/img_cp_03.jpg" alt="" />
+                                                </div>
+                                            </div>
+                                            <div class="art-content__row js-scr-sec">
+                                                <strong class="js-scr-box">Memory Computing System</strong>
+                                                <p class="js-scr-box">
+                                                    Recent deep learning models require enormous memory bandwidth to read/store huge amounts of weights and activations from/to memory devices. However, these data movements are very expensive in terms of system energy and latency.
+                                                    <br /><br />
+                                                    Traditional von-Neumann architectures consist of processor chips specialized for serial processing and DRAMs optimized for high density memory. The interface between the two devices is a major bottleneck resulting in large power consumption. In
+                                                    addition, this limitation introduces latency and bandwidth constraints. Processing in memory is actively being researched as one of the ways to solve these issues.
+                                                    <br /><br />
+                                                    Processing in memory architecture integrates memory and processing units together. The performance constraint problem can be solved by enabling computation closer to data. Near/In-memory computing can dramatically reduce both latency and energy of
+                                                    the data transmission between memory and processing unit.
+                                                    <br /><br />
+                                                    SAIT is actively collaborating with Samsung business units to explore future memory architectures.
+                                                </p>
+                                                <div class="art-content__figure js-scr-box">
+                                                    <img src="../../resources/assets/images/sub/img_cp_04.jpg" alt="" />
+                                                </div>
+                                            </div>
+                                            <div class="art-content__row js-scr-sec">
+                                                <strong class="js-scr-box">System Software</strong>
+                                                <p class="js-scr-box">
+                                                    As AI applications become more integrated into daily life, deep learning workloads are deployed on a range of devices, from mobiles to servers. Moreover, as we see increasingly varied structural and operational features in neural networks, a
+                                                    diverse range of AI accelerators and systems is being researched. As systems become more varied in scale and heterogenity, ensuring optimal performance from a system has become more challenging.
+                                                    <br /><br />
+                                                    To solve this problem, it is essential to conduct research on system software, including programming models, compilers, and runtimes. SAIT is currently focusing on researching a software stack that can support extreme scale, ranging from edge
+                                                    devices to data centers, and can handle heterogeneity where AI accelerators and in-memory processing units coexist. Additionally, our aim is to unify software optimization techniques like parallelization and scheduling by generalizing the
+                                                    optimization problem for various target hardware and systems. Furthermore, recent research at SAIT involves exploring deep learning-based compiler optimization to address the increasing search space of optimization problems as AI systems continue
+                                                    to grow in scale and complexity.
+                                                </p>
+                                            </div>
+                                            <div class="art-content__row js-scr-sec">
+                                                <strong class="js-scr-box">Neuromorphic Computing</strong>
+                                                <p class="js-scr-box">
+                                                    Artificial intelligence has made significant advancements recently, propelled by the explosion of vast data and enhanced computing power. However, it still grapples with numerous challenges. In particular, the energy required for computation is
+                                                    massive, and the evolution of computing architecture, which follows Moore's Law, struggles to keep pace with the rapid growth of AI models, hitting constraints like the von Neumann bottleneck. Moreover, while AI, especially large-scale language
+                                                    models, surpasses humans in some areas, it still falls short in replicating basic behaviors effortlessly performed even by the simplest organisms.
+                                                    <br /><br />
+                                                    Neuromorphic Computing offers a solution. SAIT is conducting research on Brain Reverse Engineering to understand biological neural systems' structure and principles. The research also extends to designing and developing learning and inference
+                                                    algorithms that reflect these insights, along with sensor and computing devices. The ultimate goal is to create a new, more efficient, and powerful computing architecture that can handle complex tasks, surpassing the existing von Neumann structure.
+                                                    This ambition aims to present a new computing paradigm through architecture innovation.
+                                                </p>
+                                                <div class="art-content__figure js-scr-box">
+                                                    <img src="../../resources/assets/images/sub/img_cp_05.jpg" alt="" />
+                                                </div>
+                                            </div>
+                                            <div class="art-content__row js-scr-sec">
+                                                <strong class="js-scr-box">Quantum Computer</strong>
+                                                <p class="js-scr-box">
+                                                    Quantum computing utilizes the law of quantum physics to simulate and solve complex problems and is expected to bring revolutionary computing power in our daily lives. To make it come true, quantum computers should perform their operations in the
+                                                    fault-tolerant regime, and millions of qubits and the high-fidelity of gate operations are known to be required.
+                                                    <br /><br />
+                                                    To accomplish the goal, our quantum computing team is conducting research on the development of techniques for fabricating, controlling and measuring solid-state-based multi-qubit chips such as superconducting qubits and silicon spin qubits. We are
+                                                    taking deep dive into the development of an integrated quantum processing unit consisting of a multi-qubit chip and cryogenic CMOS qubit controller to build a scalable and reliable quantum computer.
+                                                    <br /><br />
+                                                    We believe that our direction will make our journey to the fault-tolerant quantum computing successful.
+                                                </p>
+                                                <div class="art-content__figure js-scr-box">
+                                                    <img src="../../resources/assets/images/sub/img_cp_06.jpg" alt="" />
+                                                </div>
+                                            </div>
+                                            <div class="art-content__row js-scr-sec">
+                                                <strong class="js-scr-box">Security &amp; Cryptography</strong>
+                                                <p class="js-scr-box">
+                                                    Quantum computers, which operate under the principles of quantum mechanics, can perform complex calculations at an incredibly fast pace. This poses a threat to current cryptographic systems, which rely on complex mathematical principles and are
+                                                    thus difficult to crack using traditional computers. To address this issue, Post-Quantum Cryptography (PQC) is being researched extensively and is already commercially available. As quantum computing technology advances, PQC is expected to lead
+                                                    future security technologies.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+                <!-- //subContent-->
+
+                <!--related paper-->
+
+                <!--//related paper-->
+
+                <!-- subAside-->
+                <aside id="relatedContents" class="js-scr-sec">
+                    <div class="related__inner">
+                        <div class="related__title">
+                            <h1 class="js-scr-box">Related Contents</h1>
+                            <span class="js-scr-box">Explore more related contents from SAIT!</span>
+                        </div>
+                        <div class="related_wrap">
+                            <article class="js-scr-box">
+                                <a href="../research/paper_list_wtc.html">
+                                    <h1>Research Paper</h1>
+                                </a>
+                            </article>
+                            <article class="js-scr-box">
+                                <a href="../about/press.html">
+                                    <h1>Press</h1>
+                                </a>
+                            </article>
+                        </div>
+                    </div>
+                </aside>
+                <!-- //subAside-->
+            </section>
+            <!-- //container-->
+
+            <!-- footer -->
+
+            <footer class="footer" id="footer">
+    <div class="footer__inner">
+        <div class="footer__bottom">
+            <div class="footer__wrap">
+                <div class="footer__etc">
+                    <ul>
+                        <li><a href="../etc/privacy.html">Privacy Statement</a></li>
+                        <li>
+                            <a href="../etc/management.html"><b>Privacy Policy</b></a>
+                        </li>
+                    </ul>
+                    <h2 class="footer__logo">
+                        <img src="../../resources/assets/mobile/images/common/footer_logo.svg" alt="" />
+                    </h2>
+                </div>
+                <div class="footer__address">
+                    <div class="footer__row">
+                        <span>130, Samsung-ro, Yeongtong-gu, Suwon-si, Gyeonggi-do, 16678, Korea.</span>
+                        <span>Tel. +82-31-8061-1114</span>
+                    </div>
+                    <div class="footer__row">
+                        <span>Copyright© 2005-2018 SAMSUNG All Rights Reserved.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+            <!-- Global site tag (gtag.js) - Google Analytics -->
+            <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123575008-1"></script>
+            <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag() {
+                    dataLayer.push(arguments);
+                }
+                gtag('js', new Date());
+
+                gtag('config', 'UA-167217135-1');
+            </script>
+
+            <!-- //footer -->
+            <div id="gnbDimmed" class="dimmed"></div>
+        </div>
+        <script type="text/javascript" src="https://www.sait.samsung.co.kr/saithome/mobile/javascripts/lib/TweenMax/TweenMax.min.js"></script>
+        <script type="text/javascript" src="https://www.sait.samsung.co.kr/saithome/mobile/javascripts/lib/TweenMax/easing/EasePack.min.js"></script>
+        <script type="text/javascript" src="https://www.sait.samsung.co.kr/saithome/mobile/javascripts/design_common.js"></script>
+        <script>
+            $(document).ready(function () {
+                $('.wtc_pp').css({ background: "#fff url('http://www.sait.samsung.co.kr/webfile/researchArea/201908021457552__ico_05.png')", 'background-repeat': 'no-repeat', 'background-size': '40px 35px;', 'background-position': '25px 25px' });
+            });
+        </script>
+    </body>
+</html>
